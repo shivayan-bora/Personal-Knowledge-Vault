@@ -1,8 +1,8 @@
 ---
 id: wxslcdg78drjp87h8lcwu91
-title: Promises
+title: Axios Promises
 desc: ''
-updated: 1654349897226
+updated: 1654540785303
 created: 1654349676407
 ---
 
