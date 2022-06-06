@@ -1,26 +1,15 @@
 ---
-id: 1p28s84b4yry4ecxq1u5le5
+id: 7v8pf5c7rj2hmt2ctcg1ugc
 title: Default
 desc: ''
-updated: 1654348055806
-created: 1654347819909
+updated: 1654435582357
+created: 1654435362774
 ---
 
-If we don't provide any method, by default, axios will call get.
+You can make requests in axios in the following way:
 
 ```js
-axios('/user')
-```
-
-If we send a config object, it will call the method specified in the config object. e.g. this will call the post method:
-
-```js
-axios({
-  method: 'post',
-  url: '/user',
-  data: {
-    firstName: 'Fred',
-    lastName: 'Flintstone'
-  }
-})
+const { data } = await axios(url, {
+  headers: { Accept: 'application/json' },
+});
 ```
