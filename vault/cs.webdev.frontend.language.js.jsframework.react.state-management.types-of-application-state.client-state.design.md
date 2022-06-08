@@ -2,7 +2,7 @@
 id: u0l1tk4o1kysx28cxpdr2vp
 title: Design
 desc: ''
-updated: 1654540558998
+updated: 1654588386223
 created: 1654540333207
 ---
 
@@ -15,3 +15,5 @@ The few ways we can design a Client state management system are the following:
 2. Lifting the state and then passing down the `props` via `prop` drilling.
 
 3. Global states using `contexts`.
+
+When we are dealing with global states, we can also use Redux, MobX etc.
