@@ -2,11 +2,15 @@
 id: ww7p3t6ym4hxbwe18wa4s8r
 title: useQuery
 desc: ''
-updated: 1654697700445
+updated: 1655306220533
 created: 1654695992268
 ---
 
-Usage:
+This hook performs the data fetching, caches the results, and provides us with the state of the query. The object returned by useQuery includes the fetched data (`query.data`), the state of the query (`isLoading`, `isSuccess` and `isError`), and a bunch of methods for interacting with the query.
+
+Any time the query function throws an error or returns a rejected promise, React Query will treat that as an error, setting the `isError` state to `true`, and setting the `error` property to the thrown or rejected value.
+
+### Usage
 
 ```jsx
 
@@ -21,10 +25,6 @@ export default function GithubUser({ username }) {
     const data = userQuery.data ... 
 }
 ```
-
-This hook performs the data fetching, caches the results, and provides us with the state of the query. The object returned by useQuery includes the fetched data (`query.data`), the state of the query (`isLoading`, `isSuccess` and `isError`), and a bunch of methods for interacting with the query.
-
-Any time the query function throws an error or returns a rejected promise, React Query will treat that as an error, setting the `isError` state to `true`, and setting the `error` property to the thrown or rejected value.
 
 `useQuery` accepts two arguments, a query key and a query function.
 
