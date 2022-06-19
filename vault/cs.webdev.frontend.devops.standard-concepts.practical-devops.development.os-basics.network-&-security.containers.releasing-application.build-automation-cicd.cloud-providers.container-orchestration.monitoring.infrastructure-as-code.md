@@ -2,7 +2,7 @@
 id: 6sjvx596c8b9rd0uvld28qt
 title: 9. Infrastructure as Code
 desc: ''
-updated: 1655496972284
+updated: 1655646922449
 created: 1655496506751
 ---
 
@@ -20,3 +20,5 @@ For that we need two kinds of tools:
 2. Configuration management e.g. Ansible, Chef, Puppet etc.
 
 Using these tools will lead the process to be more efficient, less error prone, transparent and easy to replicate and recover.
+
+![IaC](/assets/images/2022-06-18-14-32-00.png)
