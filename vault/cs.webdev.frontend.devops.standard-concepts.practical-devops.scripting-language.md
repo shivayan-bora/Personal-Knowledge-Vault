@@ -2,7 +2,7 @@
 id: 1zw0e1l7kdq4q5b657bqdk5
 title: 10. Scripting Language
 desc: ''
-updated: 1655526362998
+updated: 1655814073047
 created: 1655496993320
 ---
 
