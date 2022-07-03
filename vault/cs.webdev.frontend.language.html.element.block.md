@@ -1,0 +1,13 @@
+---
+id: fnp5i2cawct5ove7lnael47
+title: Block Elements
+desc: ''
+updated: 1656828103310
+created: 1656751942541
+---
+
+A block level element, occupies the entire horizontal width of the parent element(container) and vertical space eqaul to the height of it's contents, thereby creating a 'block'.
+
+Browsers typically display the block-level element with a newline both before and after the element. You can visualize them as a stack of boxes.
+
+**Note**: A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
