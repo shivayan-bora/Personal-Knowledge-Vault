@@ -2,7 +2,7 @@
 id: lzwxnejkg7ym2nblayzcaq0
 title: Image Tags
 desc: ''
-updated: 1656845319678
+updated: 1657204325697
 created: 1656830457304
 ---
 
@@ -11,3 +11,6 @@ It's a self closing tag and an inline element to put images into it. You can spe
 ```html
 <img src='<some-img-url>' alt="<some-alternate-text-to-display-if-image-can't-be-loaded>"/>
 ```
+
+1. `src`: Source of the image
+2. `alt`: Alternate text in case the image can't be rendered and specifically helpful for accessibility readers. It also enables good SEO as search engines know what this image is all about.

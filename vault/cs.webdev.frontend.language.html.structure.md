@@ -2,7 +2,7 @@
 id: sdl7hk5kv9dur1duvnsv8um
 title: Structure
 desc: ''
-updated: 1656858593795
+updated: 1657204384736
 created: 1656857780341
 ---
 
@@ -10,7 +10,8 @@ created: 1656857780341
 <!DOCTYPE html>
 <!-- ^ Should be the top-most element in the HTML Document -->
 <!-- ^ Tells the browser that this is a HTML5 Document -->
-<html>
+<!-- It's good to specify the language in which your webpage is in and in this case, it's English -->
+<html lang="en">
     <!-- Starting of your HTML document -->
     <head>
         <!-- Is not visible in the browser webpage -->
