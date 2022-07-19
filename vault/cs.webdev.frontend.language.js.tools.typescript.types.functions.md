@@ -2,7 +2,7 @@
 id: 49th9ka2xjqjl61bvr23mlc
 title: Functions
 desc: ''
-updated: 1656998238385
+updated: 1657259939549
 created: 1656950171090
 ---
 
@@ -14,6 +14,14 @@ Like Objects, you can specify the type of a variable as a Function, however, it'
 
 ```js
 let printName: (name: string) => void
+```
+
+or
+
+```js
+let printName: (name: string): void {
+    console.log(name)
+}
 ```
 
 This means that, we have a function `printName` which takes in a parameter `name` which is a `string` and returns `void` i.e. undefined. We can specify other return types also based on what we want.

@@ -11,4 +11,4 @@ This is UiPath's ML platform which enables customers to deploy, consume, manage,
 ![AI Center](/assets/images/2022-06-28-16-58-47.png)
 
 **Permissions:**
-To access AI Center a tenant with AI Fabric enabled is required. User-based roles can be assigned in [[cs.ai.ml.rpa.enhanced-rpa.uipath.products.orchestrator]] to limit who has access to the AI Center App.
+To access AI Center a tenant with AI Fabric enabled is required. User-based roles can be assigned in [[uipath.products.orchestrator]] to limit who has access to the AI Center App.

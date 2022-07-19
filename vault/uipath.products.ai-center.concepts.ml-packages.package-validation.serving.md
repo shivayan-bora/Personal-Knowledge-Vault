@@ -6,7 +6,7 @@ updated: 1656488775320
 created: 1656488501927
 ---
 
-When a model is uploaded, AI Fabric validates the uploaded `.zip` file against the requirements stated in section [[cs.ai.ml.rpa.enhanced-rpa.uipath.products.ai-center.concepts.ml-packages.structure]]. For all packages, the following three checks are performed:
+When a model is uploaded, AI Fabric validates the uploaded `.zip` file against the requirements stated in section [[uipath.products.ai-center.concepts.ml-packages.structure]]. For all packages, the following three checks are performed:
 
 - A non-empty root folder exists.
 - A `requirements.txt` file exists.
