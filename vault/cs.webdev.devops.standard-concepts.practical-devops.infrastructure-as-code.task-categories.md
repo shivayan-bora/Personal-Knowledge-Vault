@@ -17,7 +17,7 @@ created: 1655650236861
     - Also, it helps in managing those dependencies.
 3. Deploying the application
 
-With the advent of [[cs.webdev.frontend.devops.tools.docker]], the steps 2 and 3 kind of merged as with Docker containers, you package your application and all it's dependencies into an image. So you have all the needed configuration in the image itself.
+With the advent of [[cs.webdev.devops.tools.docker]], the steps 2 and 3 kind of merged as with Docker containers, you package your application and all it's dependencies into an image. So you have all the needed configuration in the image itself.
 Therefore, in step 1, i.e. during provisioning, if you install Docker Runtime in all the servers, the further steps gets easier to take care as now you just need to run those containers in the server.
 
 There are two distinctions in the tasks:
