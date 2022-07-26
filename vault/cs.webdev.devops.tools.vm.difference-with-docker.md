@@ -16,7 +16,7 @@ You might have seen, different OS have different applications that's only compat
 ## Docker vs VM
 
 ![Docker vs VM](/assets/images/2022-06-20-00-46-30.png)
-[[cs.webdev.frontend.devops.tools.docker]] virtualizes the Applications layer. So when you download a docker image, it contains the applications layer of the OS and some other necessary applications installed on top of it. It uses the Kernel of the host as it doesn't ship with a kernel of it's own.
+[[cs.webdev.devops.tools.docker]] virtualizes the Applications layer. So when you download a docker image, it contains the applications layer of the OS and some other necessary applications installed on top of it. It uses the Kernel of the host as it doesn't ship with a kernel of it's own.
 
 The VM on the other hand contains both the OS Kernel and the Applications layer. As it contains the entire OS Kernel, when we boot a VM image, it doesn't use the host kernel at all and boots up it's own.
 

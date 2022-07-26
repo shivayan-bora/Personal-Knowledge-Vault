@@ -16,7 +16,7 @@ As more and more companies are adopting Docker for containerizing their applicat
 
 Of course you wouldn't want this process to be a manual process and because of that we need a build automation tool like GitLab, Github actions and Jenkins (one of the most popular build automation tools).
 
-You would need to connect this pipeline to the [[git|cs.webdev.frontend.devops.tools.git]] repository to get the code.
+You would need to connect this pipeline to the [[git|cs.webdev.devops.tools.git]] repository to get the code.
 
 This first part is the continuous integration process which consists of pulling the code changes from git, running tests, performing builds and packaging the app, building an image and pushing it into the repository.
 

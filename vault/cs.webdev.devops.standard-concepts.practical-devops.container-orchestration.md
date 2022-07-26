@@ -12,4 +12,4 @@ These days almost all the applications are being run as containers as almost all
 
 For smaller applications, we can use Docker compose to manage the containers.
 
-However, for managing containers of larger applications consisting of multiple microservices, we need something powerful like [[Kubernetes|cs.webdev.frontend.devops.tools.kubernetes]]. So a DevOps engineer needs to learn Kubernetes works and be able to administer, manage the cluster as well as deploy applications in it.
+However, for managing containers of larger applications consisting of multiple microservices, we need something powerful like [[Kubernetes|cs.webdev.devops.tools.kubernetes]]. So a DevOps engineer needs to learn Kubernetes works and be able to administer, manage the cluster as well as deploy applications in it.
