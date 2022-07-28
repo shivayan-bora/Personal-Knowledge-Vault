@@ -6,7 +6,7 @@ updated: 1655307004218
 created: 1655305683415
 ---
 
-Unlike queries, mutations are used to perform CRUD operations on data or perform server side-effects. For this, we can use a [[useMutation|cs.webdev.frontend.language.js.jsframework.react.state-management.libraries.react-query.apis.useMutation]] hook.
+Unlike queries, mutations are used to perform CRUD operations on data or perform server side-effects. For this, we can use a [[useMutation|cs.webdev.frontend.language.js.jsframework.react.state-management.tools.react-query.apis.useMutation]] hook.
 
 ```jsx
 function App() {
