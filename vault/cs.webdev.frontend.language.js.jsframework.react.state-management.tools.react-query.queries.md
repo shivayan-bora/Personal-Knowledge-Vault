@@ -30,4 +30,4 @@ ReactDOM.render(
 );
 ```
 
-Next up, we need to use the [[useQuery|cs.webdev.frontend.language.js.jsframework.react.state-management.libraries.react-query.apis.useQuery]] hook to create new queries.
+Next up, we need to use the [[useQuery|cs.webdev.frontend.language.js.jsframework.react.state-management.tools.react-query.apis.useQuery]] hook to create new queries.
