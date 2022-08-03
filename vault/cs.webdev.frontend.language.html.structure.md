@@ -2,7 +2,7 @@
 id: sdl7hk5kv9dur1duvnsv8um
 title: Structure
 desc: ''
-updated: 1657204384736
+updated: 1659502364475
 created: 1656857780341
 ---
 
@@ -18,6 +18,8 @@ created: 1656857780341
         <!-- Contains all your metadata for search engines, your scripts, your stylesheets etc. -->
         <!-- This is used to specify character set to the browser for it to understand the characters in the document e.g. emojis -->
         <meta charset='utf8' />
+        <!-- For pages to look similar on mobile devices as well as desktop or laptop -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Title of the browser tab and also used for SEO -->
         <title>My Awesome Website</title>
     </head>
