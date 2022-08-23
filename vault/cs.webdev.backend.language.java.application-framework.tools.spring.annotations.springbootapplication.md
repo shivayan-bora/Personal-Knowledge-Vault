@@ -1,8 +1,8 @@
 ---
 id: zzt0bgqu40dzztqw4dzcahh
-title: org.springframework.boot.SpringApplication
+title: SpringBootApplication
 desc: ''
-updated: 1659502046559
+updated: 1659688279440
 created: 1659433153117
 ---
 

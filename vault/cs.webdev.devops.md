@@ -1,13 +1,13 @@
 ---
-id: pobw03mmbtgq9x57oevdru7
+id: xukaevbdt4fhvl96x7b8sf3
 title: Devops
 desc: ''
-updated: 1655455154631
-created: 1654835443150
+updated: 1659689501730
+created: 1659689389330
 ---
-![DevOps](/assets/images/2022-06-16-12-32-04.png)
 
-In simpler terms, it is an intersection between development and operations in the Software Development Lifecycle.
+AWS defines DevOps as:
 
-In the center of DevOps, lies the CI/CD cycle:
-![CI/CD](/assets/images/2022-06-17-14-08-46.png)
+```text
+ A combination of cultural philisophies, practices and tools that increases an organization's ability to deliver applications and services at high velocity.
+```
