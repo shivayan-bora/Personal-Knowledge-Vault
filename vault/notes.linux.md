@@ -2,7 +2,7 @@
 id: 72h5htbgffig8fk3uhz5ygh
 title: Linux
 desc: ''
-updated: 1664779077381
+updated: 1664793018503
 created: 1663825778825
 ---
 
@@ -166,6 +166,12 @@ To query a package:
 
 ```bash
     rpm -q package.rpm
+```
+
+To check the version installed:
+
+```bash
+    rpm -qa | grep package
 ```
 
 To update a package:
