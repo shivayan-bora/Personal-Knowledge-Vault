@@ -1,0 +1,33 @@
+<h1 id="the-webs-next-transformation">The Web's Next Transformation<a aria-hidden="true" class="anchor-heading icon-link" href="#the-webs-next-transformation"></a></h1>
+<p>MPA (Multipage Apps) => PEMPA (Progressively enhanced multi-page apps - JS Sprinkles) => SPA (Single Page Apps) => The Next Phase</p>
+<ol>
+<li>Data Persistence</li>
+<li>Routes</li>
+<li>Data Fetches (Reads)</li>
+<li>Data Mutations (Creates, Updates, Deletes)</li>
+<li>Rendering Logic</li>
+</ol>
+<p>Prisma - ORM for Node.js and TypeScript</p>
+<p><code>&#x3C;form></code> only supports GET and POST</p>
+<p>MPA => Whatever mutation we do, we have to reload the page and have a history of all the pages we have visited. => Everything on server => Server serves html, css and minimal to no js.</p>
+<p>PEMPA => jQuery => jQuery is hard to maintain and is not a good fit for large applications. => jQuery used for DOM manipulation. => Code duplication. => Reandering happens partially in both client and server.</p>
+<p>SPA => Rendering everything in client. => Server just stores data. => No rendering happening on servers.</p>
+<p>PESPA (Progressively Enhanced SPA) => e.g. Remix, Svelte kit => No more API Routes</p>
+<ol>
+<li>Functional is the baseline - JS Used to enhance not enable</li>
+<li>Lazy Loading - intelligent pre-fetching (more than just JS Code)</li>
+<li>Pushes code to the server</li>
+<li>No manual duplication of UI code (as in PEMPAs)</li>
+<li>Transparent browser emulation (#useThePlatform)</li>
+</ol>
+<p>Remix makes all network requests and code splitting.</p>
+<p>In Review:</p>
+<ol>
+<li>Transitions involve both frontend and backend</li>
+<li>Transitions are primarily about moving where the code lives (where it's written, who writes it and where it's run)</li>
+<li>Every transition had motivations</li>
+<li>Transtitions can impact UX and DX in both positive and negative ways</li>
+<li>Every transition comes with tradeoffs</li>
+<li>We are often unaware of the impact of tradeoffs untill after transition</li>
+<li>The transition to PESPAs improves both UX and DX</li>
+</ol>

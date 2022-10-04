@@ -1,0 +1,24 @@
+<h1 id="spy">Spy<a aria-hidden="true" class="anchor-heading icon-link" href="#spy"></a></h1>
+<p>Consider the following:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> axios <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'axios'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">fetchData</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">id</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> results <span class="token operator">=</span> <span class="token keyword control-flow">await</span> axios<span class="token punctuation">.</span><span class="token method function property-access">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://jsonplaceholder.typicode.com/todos/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    <span class="token keyword control-flow">return</span> results<span class="token punctuation">.</span><span class="token property-access">data</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Here we don't want to actually make an HTTP <code>axios.get</code> request. So we can <code>spyOn</code> the axios module. You can consider spying on something as a mock i.e. instead of the spied function having an implementation, we're going to spy on it and return the mock value that we want.</p>
+<pre class="language-js"><code class="language-js"><span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'mock axios'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+    <span class="token comment">// 1st parameter is the module we want to spy on</span>
+    <span class="token comment">// 2nd parameter is what method do we want to spy on in the module</span>
+    jest<span class="token punctuation">.</span><span class="token method function property-access">spyOn</span><span class="token punctuation">(</span>axios<span class="token punctuation">,</span> <span class="token string">'get'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">mockReturnValueOnce</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">todo</span><span class="token operator">:</span> <span class="token string">'Get 1M subscribers'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> results <span class="token operator">=</span> <span class="token keyword control-flow">await</span> <span class="token function">fetchData</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">expect</span><span class="token punctuation">(</span>results<span class="token punctuation">.</span><span class="token property-access">todo</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toBe</span><span class="token punctuation">(</span><span class="token string">'Get 1M subscribers'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>

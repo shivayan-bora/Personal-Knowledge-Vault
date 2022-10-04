@@ -1,0 +1,37 @@
+<h1 id="react-testing-library">React Testing Library<a aria-hidden="true" class="anchor-heading icon-link" href="#react-testing-library"></a></h1>
+<p>React Testing Library is built on top of <a href="https://testing-library.com/docs/dom-testing-library/intro/">DOM Testing Library</a> which in turn is a part of the <a href="https://testing-library.com/docs/"><code>@testing-library</code></a> family of packages.</p>
+<h2 id="the-problem">The Problem<a aria-hidden="true" class="anchor-heading icon-link" href="#the-problem"></a></h2>
+<p>As per it's guiding principle, you would want to write maintainable tests that give you confidence that your componenets are working for your users.</p>
+<p>Therefore, you would want your tests to avoid including implementation details, so, refactors of your components i.e. changes to implementation but not to the functionality, don't break the tests and slow you down.</p>
+<h2 id="the-solution">The Solution<a aria-hidden="true" class="anchor-heading icon-link" href="#the-solution"></a></h2>
+<p>The core library i.e. DOM Testing library, is a light-weight solution for testing webpages by querying and interacting with the DOM nodes (whether simultaed  with JSDOM/<a href="/Personal-Knowledge-Vault/notes/sfxt5rdl2skv7tliqiu940r">Jest</a> or in the browser).</p>
+<p>It provides utilities for interacting/querying the DOM nodes in a way that's similar to how user finds elements on the web page. In this way, the framework ensures confidence that our application will work when a real user interacts with it as our tests will mimic the way a user interacts with our application.</p>
+<h2 id="what-this-library-is-not">What this library is not?<a aria-hidden="true" class="anchor-heading icon-link" href="#what-this-library-is-not"></a></h2>
+<ol>
+<li>A test runner or framework.</li>
+<li>Specific to a testing framework.</li>
+</ol>
+<p>DOM Testing Library works with any environment that provides DOM APIs, such as Jest, Mocha + JSDOM, or a real browser.</p>
+<h2 id="what-you-should-avoid-with-testing-library">What you should avoid with Testing Library?<a aria-hidden="true" class="anchor-heading icon-link" href="#what-you-should-avoid-with-testing-library"></a></h2>
+<p>Testing Library encourages you to avoid testing implementation details like the internals of a component you're testing (though it's still possible).</p>
+<p>The Guiding Principles of this library emphasize a focus on tests that closely resemble how our web pages are interacted by the users.</p>
+<p>You may want to avoid the following implementation details:</p>
+<ol>
+<li>Internal state of a component</li>
+<li>Internal methods of a component</li>
+<li>Lifecycle methods of a component</li>
+<li>Child components</li>
+</ol>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/c7pxtfwojkk40aky9h5b55o">Async Tests</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/8vel51jqushz1dd02xjix2d">Element Interaction</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/qwfv2kevv4oxjas3rf2ml7d">Finding Elements</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/njqnlyx7pvokswk3w8c3374">Guiding Principle</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/3pi3qz274245jofrv1etzan">Integration Tests</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/3m33su0agj9nqvkvlixifit">Mock</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/rs29yr4gxcs5me0di2ua4rk">Rendering Elements on Virtual DOM</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/zy5dnn1on96dmwfbcrrdyz2">Setup and Teardown</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/o20qql1or46fl9dj9lnz125">Test Structure</a></li>
+</ol>

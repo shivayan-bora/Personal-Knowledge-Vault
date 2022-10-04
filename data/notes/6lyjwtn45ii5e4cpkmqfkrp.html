@@ -1,0 +1,27 @@
+<h1 id="types-of-application-state">Types of Application State<a aria-hidden="true" class="anchor-heading icon-link" href="#types-of-application-state"></a></h1>
+<p>In React, we need to consider state into two parts: Client state and Server State. These two aren't the same thing.</p>
+<ul>
+<li><strong>Server Cache</strong>: State that's actually stored on the server, that we store in the client for quick-access. (e.g. User Data).</li>
+<li><strong>UI State</strong>: State that's only useful for the UI to  control interactivity of different parts of the app. (e.g. modal <code>isOpen</code> state).</li>
+</ul>
+<p>You can use React for UI state. As a matter of fact, React is designed to handle this UI state for us.</p>
+<p>You can use React Query for your server cache.</p>
+<p>Some key points:</p>
+<ul>
+<li>Server cache !== UI State. Use React Query for Server Cache. (Checkout Remix)</li>
+<li>React is a state management library.</li>
+<li>Lift state up (or down! <a href="https://kentcdodds.com/blog/state-colocation-will-make-your-react-app-faster"><strong>Colocation</strong></a>).</li>
+<li>Use composition when <code>prop-drilling</code> is a pain (and sometimes use Context).</li>
+<li>If performance is an issue, use <code>jotai</code>.</li>
+</ul>
+<p>References:</p>
+<ol>
+<li><a href="https://kentcdodds.com/blog/application-state-management-with-react">Application State Management with React</a>.</li>
+<li><a href="https://leerob.io/blog/react-state-management#state-management-options">React State Management from Lee Robinson</a></li>
+</ol>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/zp3wf6ep0tl5u2qkfqocsrk">Client State</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/f62c8t9mtxjgr7lqbdayfjg">Server State</a></li>
+</ol>

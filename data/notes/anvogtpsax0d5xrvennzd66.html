@@ -1,0 +1,11 @@
+<h1 id="ts">TS<a aria-hidden="true" class="anchor-heading icon-link" href="#ts"></a></h1>
+<pre class="language-tsx"><code class="language-tsx"><span class="token keyword">interface</span> <span class="token class-name"><span class="token maybe-class-name">Props</span></span> <span class="token punctuation">{</span>
+    todo<span class="token operator">:</span> <span class="token maybe-class-name">Todo</span><span class="token punctuation">;</span>
+    todos<span class="token operator">:</span> <span class="token maybe-class-name">Todo</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    setTodos<span class="token operator">:</span> <span class="token maybe-class-name">React</span><span class="token punctuation">.</span><span class="token property-access"><span class="token maybe-class-name">Dispatch</span></span><span class="token operator">&#x3C;</span><span class="token maybe-class-name">React</span><span class="token punctuation">.</span><span class="token property-access"><span class="token maybe-class-name">SetStateAction</span></span><span class="token operator">&#x3C;</span><span class="token maybe-class-name">Todo</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">>></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> <span class="token maybe-class-name">TodoCard</span><span class="token operator">:</span> <span class="token maybe-class-name">React</span><span class="token punctuation">.</span><span class="token constant">FC</span><span class="token operator">&#x3C;</span><span class="token maybe-class-name">Props</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>todo<span class="token punctuation">,</span> todos<span class="token punctuation">,</span> setTodos<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+    <span class="token spread operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre>

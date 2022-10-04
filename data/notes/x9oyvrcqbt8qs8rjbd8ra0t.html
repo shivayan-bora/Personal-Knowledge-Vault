@@ -1,0 +1,13 @@
+<h1 id="query-keys">Query Keys<a aria-hidden="true" class="anchor-heading icon-link" href="#query-keys"></a></h1>
+<p>A query key is something that's used to uniquely identify the queries. This same query key is used to uniquely identify the query data from the cache. This makes it possible to use the same query data multiple times without making any further duplicate requests.</p>
+<p>Query keys behave the exact same as the useEffect dependency array. Each item in the query key will cause the query to refetch when it changes. e.g. the following query will refetch when the <code>username</code> variable changes.</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token function">useQuery</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'user'</span><span class="token punctuation">,</span> username<span class="token punctuation">]</span><span class="token punctuation">,</span> fetchUser<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>That means the query key has a direct connection to the query function. Any values in the query function that could change should be put somewhere in our query key, so React Query knows to rerun the query function when they do change. Most query keys will use strings and numbers as their array items, but Objects are also useful.</p>
+<p><strong>Note:</strong> The order of our query key array is important, since reordering the items would change the query key.</p>
+<p><strong>Note:</strong> React Query v4 only supports arrays as query keys.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/a4giff4ll5fjz456rcnp7l1">Usage</a></li>
+</ol>

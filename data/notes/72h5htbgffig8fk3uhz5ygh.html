@@ -1,0 +1,130 @@
+<h1 id="linux">Linux<a aria-hidden="true" class="anchor-heading icon-link" href="#linux"></a></h1>
+<h2 id="why-linux">Why Linux?<a aria-hidden="true" class="anchor-heading icon-link" href="#why-linux"></a></h2>
+<ul>
+<li>As per stackoverflow, Linux is the most common and the most loved platform used for development.</li>
+<li>Most of the devops tools primarily need Linux and most of them are released on Linux first before moving on to other operating systems.</li>
+</ul>
+<h2 id="linux-distributions">Linux Distributions<a aria-hidden="true" class="anchor-heading icon-link" href="#linux-distributions"></a></h2>
+<p>There are many Linux distributions available. Some of the popular ones are:</p>
+<ul>
+<li>CentOS (Open Source RHEL)</li>
+<li>Ubuntu</li>
+<li>Red Hat Enterprise Linux (RHEL)</li>
+<li>Fedora</li>
+<li>Debian</li>
+</ul>
+<h2 id="shell">Shell<a aria-hidden="true" class="anchor-heading icon-link" href="#shell"></a></h2>
+<p>The text-based CLI that helps you run commands to interact with the operating system is called the shell. The shell is the interface between the user and the operating system. For Linux, it's called the Linux shell.</p>
+<p><img src="/Personal-Knowledge-Vault/assets/images/2022-09-22-11-41-31.png" alt="Shell Types"></p>
+<h2 id="basic-commands">Basic Commands<a aria-hidden="true" class="anchor-heading icon-link" href="#basic-commands"></a></h2>
+<p>Cheatsheet: <a href="https://www.guru99.com/linux-commands-cheat-sheet.html">https://www.guru99.com/linux-commands-cheat-sheet.html</a></p>
+<ul>
+<li><code>echo</code>: Prints the given string to the terminal.</li>
+<li><code>ls</code>: Lists the files and directories in the current directory.</li>
+<li><code>cd</code>: Changes the current directory.</li>
+<li><code>pwd</code>: Prints the current working directory.</li>
+<li><code>mkdir</code>: Creates a new directory.</li>
+</ul>
+<p>To run multiple commands, separate it by a semi-colon:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token builtin class-name">echo</span> <span class="token string">"Hello"</span><span class="token punctuation">;</span> <span class="token builtin class-name">echo</span> <span class="token string">"World"</span>
+    <span class="token builtin class-name">cd</span> new_dir<span class="token punctuation">;</span> <span class="token function">mkdir</span> www<span class="token punctuation">;</span> <span class="token builtin class-name">pwd</span>
+</code></pre>
+<p><img src="/Personal-Knowledge-Vault/assets/images/2022-09-22-11-45-22.png" alt="Make a directory hierarchy"></p>
+<p>Remember, the shell is case-sensitive. So, <code>mkdir</code> and <code>MKDIR</code> are different commands.</p>
+<h2 id="file-system">File System<a aria-hidden="true" class="anchor-heading icon-link" href="#file-system"></a></h2>
+<p>Remove a file:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">rm</span> file.txt
+</code></pre>
+<p>Remove a directory using <code>rmdir</code>:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">rmdir</span> new_dir
+</code></pre>
+<p>or:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">rm</span> -r /tmp/new_dir
+</code></pre>
+<p><code>-r</code> is used to remove a directory recursively.</p>
+<p>To copy a file:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">cp</span> file.txt file2.txt
+</code></pre>
+<p>The first part is source file name and the second part is the destination file name.</p>
+<p>To copy one directory and all of it's contents to another path:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">cp</span> -r /tmp/new_dir /tmp/new_dir_copy
+</code></pre>
+<p>To create a file:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">touch</span> /tmp/new_dir/file.txt
+</code></pre>
+<p>To add content to a file:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">cat</span> <span class="token operator">></span> /tmp/new_dir/file.txt
+</code></pre>
+<p>You can use <code>Enter</code> to add a new line and <code>Ctrl + D</code> to save the file.</p>
+<p>To view the contents of a file:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">cat</span> /tmp/new_dir/file.txt
+</code></pre>
+<p>To move a file:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">mv</span> /tmp/new_dir/file.txt /tmp/new_dir/file2.txt
+</code></pre>
+<p>This is equivalent to renaming a file or cutting and pasting a file.</p>
+<h2 id="user-accounts">User Accounts<a aria-hidden="true" class="anchor-heading icon-link" href="#user-accounts"></a></h2>
+<p><code>whoami</code> prints the current user.</p>
+<p><code>id</code> prints the user id and the group id.</p>
+<p><code>su</code> switches to another user.</p>
+<p><code>ssh user@host</code> allows you to connect to a remote <code>host</code> with <code>user</code>.</p>
+<p>Every Linux system has a root user who has no restrictions on the system and can perform any task. This is why in most production environments or enterprise environments, access to the root user is restricted, and you'll almost never login to the system as the root user.</p>
+<p>A root user can grant root access to a regular user by granting them <code>sudo</code> privileges by making an entry to the <code>/etc/sudoers</code> file. So the user is a regular user with root privileges.</p>
+<p>When a regular user is granted a <code>sudo</code> privilege, they can now elevate their permission level and perform tasks that they otherwise couldn't by using a prefix any command with the keyword <code>sudo</code>.</p>
+<p><img src="/Personal-Knowledge-Vault/assets/images/2022-09-23-14-17-27.png" alt="Granting sudo privileges"></p>
+<h2 id="download-files">Download files<a aria-hidden="true" class="anchor-heading icon-link" href="#download-files"></a></h2>
+<p><code>curl -O https://example.com/file.txt</code> downloads the file to the current directory. <code>-O</code> option is used to save the result to a file.</p>
+<p><code>wget https://example.com/file.txt -O some-file.txt</code> downloads the file to the current directory.<code>-O</code> option is used to specify the name of the file that you want it to store locally as.</p>
+<h2 id="check-os-version">Check OS Version<a aria-hidden="true" class="anchor-heading icon-link" href="#check-os-version"></a></h2>
+<p><code>ls /etc/*release*</code> prints the OS version.</p>
+<p><code>cat /etc/*release*</code> prints more details about the OS version.</p>
+<h2 id="package-managers">Package Managers<a aria-hidden="true" class="anchor-heading icon-link" href="#package-managers"></a></h2>
+<p>Package managers are used to install, update, and remove software packages on the system.</p>
+<p>CentOS and Red Hat Enterprise Linux use RPM (Red Hat Package Manager) package manager.</p>
+<p>A software is packaged into a bundle with the extension <code>.rpm</code>. This bundle contains all the files that are required to run the software.</p>
+<p>To install a package:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">rpm</span> -i package.rpm
+</code></pre>
+<p>To uninstall a package:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">rpm</span> -e package.rpm
+</code></pre>
+<p>To query a package:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">rpm</span> -q package.rpm
+</code></pre>
+<p>To check the version installed:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">rpm</span> -qa <span class="token operator">|</span> <span class="token function">grep</span> package
+</code></pre>
+<p>To update a package:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">rpm</span> -U package.rpm
+</code></pre>
+<p>RPM don't install dependencies automatically. So, you'll have to install the dependencies manually.</p>
+<p>So you need a solution that can install dependencies automatically. This is where <code>yum</code> comes in.</p>
+<p><code>yum</code> is a high level package manager that is used to install, update, and remove software packages on the system. <code>yum</code> uses <code>rpm</code> under the hood.</p>
+<p>To install a package:</p>
+<pre class="language-bash"><code class="language-bash">    yum <span class="token function">install</span> ansible
+</code></pre>
+<p>Yum searches software repositories that act as warehouses containing hundreds and thousands of software rpm packages. These repositories can be local or remote or available publicly in the internet.</p>
+<p>When you install a package using <code>yum</code>, it automatically finds the dependencies and installs them in order of requirement.</p>
+<p>The list of repositories that are configured on the system can be found in the <code>/etc/yum.repos.d/</code> directory.</p>
+<p>Every OS comes bundled with its own set of repositories. You can add more repositories to the system by adding them to the <code>/etc/yum.repos.d/</code> directory.</p>
+<p>To see the list of repositories that are configured on the system:</p>
+<pre class="language-bash"><code class="language-bash">    yum repolist
+</code></pre>
+<p>Listing the files under the <code>/etc/yum.repos.d/</code> directory, shows the files where these repositories are configured:</p>
+<pre class="language-bash"><code class="language-bash">    <span class="token function">ls</span> /etc/yum.repos.d/
+</code></pre>
+<p>If you check the contents of these configuration files, you will see the URL of the location where all packages are stored.</p>
+<p><img src="/Personal-Knowledge-Vault/assets/images/2022-10-03-12-03-54.png" alt="YUM Repos"></p>
+<p>If you visit the URL, you will see the list of packages(<code>.rpm</code> files) that are available in the repository.</p>
+<p>To see the list of packages that are installed on the system, followed by the package name, if you want to search for it's particular package:</p>
+<pre class="language-bash"><code class="language-bash">    yum list ansible
+</code></pre>
+<p>To remove a package:</p>
+<pre class="language-bash"><code class="language-bash">    yum remove ansible
+</code></pre>
+<p>To show all the list of available versions of a package:</p>
+<pre class="language-bash"><code class="language-bash">    yum --showduplicates list ansible
+</code></pre>
+<p>To install a specific version of a package:</p>
+<pre class="language-bash"><code class="language-bash">    yum <span class="token function">install</span> ansible-2.9.6
+</code></pre>

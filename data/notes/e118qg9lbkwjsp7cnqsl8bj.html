@@ -1,0 +1,18 @@
+<h1 id="basic-types">Basic Types<a aria-hidden="true" class="anchor-heading icon-link" href="#basic-types"></a></h1>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> <span class="token literal-property property">name</span><span class="token operator">:</span> string
+<span class="token keyword">let</span> <span class="token literal-property property">age</span><span class="token operator">:</span> number
+<span class="token keyword">let</span> <span class="token literal-property property">isStudent</span><span class="token operator">:</span> boolean
+
+<span class="token comment">// Array of Strings</span>
+<span class="token keyword">let</span> <span class="token literal-property property">hobbies</span><span class="token operator">:</span> string<span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+<span class="token comment">// Tuple: Will accept a pair of number and string</span>
+<span class="token keyword">let</span> <span class="token literal-property property">role</span><span class="token operator">:</span> <span class="token punctuation">[</span>number<span class="token punctuation">,</span> string<span class="token punctuation">]</span>
+</code></pre>
+<p>There's an <code>any</code> type which means it can have any type, however, it defeats the purpose of having typescript.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> <span class="token literal-property property">name</span><span class="token operator">:</span> any
+</code></pre>
+<p>Like <code>any</code>, we also have an <code>unknown</code> type which means we don't know yet.</p>
+<p>If you want to have a variable that can be either a <code>number</code> or a <code>string</code>, we can use a union operator (<code>|</code>) as follows:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> <span class="token literal-property property">someVariable</span><span class="token operator">:</span> number <span class="token operator">|</span> string
+</code></pre>

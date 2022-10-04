@@ -1,0 +1,21 @@
+<h1 id="forms">Forms<a aria-hidden="true" class="anchor-heading icon-link" href="#forms"></a></h1>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>form</span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>GET<span class="token punctuation">'</span></span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>/register<span class="token punctuation">'</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>text<span class="token punctuation">'</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>user-name<span class="token punctuation">'</span></span><span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>submit<span class="token punctuation">'</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>form</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>Form is used to submit data to the backend.</p>
+<p>The <code>method</code> attribute defines what HTTP method it uses to talk with the backend.</p>
+<p><code>action</code> is the url path the form tries to talk to. This is where the form sends it's data to.</p>
+<p><code>submit</code> is used to submit the form. A button inside a form submits the form by default but we can be specifically set that button to submit the form by specifying, <code>type='submit'</code>.</p>
+<p><code>name</code> is used as a query parameter.</p>
+<p>e.g. in this case, itwould be:</p>
+<p><code>http://www.somewebsite.com/register?user-name=&#x3C;value-entered-in-the-input-textbox></code></p>
+<p>In forms, everything exists in a <code>name=value</code> pair. It's recommended to give those attributes to all the form elements that needs it.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/ny3ecpid6jgcv3846jx1o20">Checkbox</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/a4otxf4bvospt0ychwk6rip">Fieldset and Legend</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/rz0jgrv50x5xeziioucixeo">Radio</a></li>
+</ol>

@@ -1,0 +1,17 @@
+<h1 id="headers">Headers<a aria-hidden="true" class="anchor-heading icon-link" href="#headers"></a></h1>
+<p>To pass in the headers with Axios:</p>
+<ul>
+<li>GET Request: The second argument is the headers.</li>
+</ul>
+<pre class="language-js"><code class="language-js">axios<span class="token punctuation">.</span><span class="token method function property-access">get</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>POST Request: The third argument alongwith the data is the header.</li>
+</ul>
+<pre class="language-js"><code class="language-js">axios<span class="token punctuation">.</span><span class="token method function property-access">post</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span><span class="token punctuation">{</span>data<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>One small example would be:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">{</span> data <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword control-flow">await</span> axios<span class="token punctuation">.</span><span class="token method function property-access">get</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">headers</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">Accept</span><span class="token operator">:</span> <span class="token string">'application/json'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>

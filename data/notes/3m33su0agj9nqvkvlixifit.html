@@ -1,0 +1,18 @@
+<h1 id="mock">Mock<a aria-hidden="true" class="anchor-heading icon-link" href="#mock"></a></h1>
+<p>React Testing Library also uses <a href="/Personal-Knowledge-Vault/notes/w0ywzhyy6l2f9gds30a0bi4">Mock</a> functions from jest.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> mockedSetTodo <span class="token operator">=</span> jest<span class="token punctuation">.</span><span class="token method function property-access">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'AddInput'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should render input element'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token function">render</span><span class="token punctuation">(</span>
+            <span class="token operator">&#x3C;</span><span class="token maybe-class-name">AddInput</span>
+                todos<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+                <span class="token comment">// We don't care about the setTodos function as we are just trying to render the component</span>
+                setTodos<span class="token operator">=</span><span class="token punctuation">{</span>mockedSetTodo<span class="token punctuation">}</span>
+            <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token punctuation">)</span>
+        <span class="token keyword">const</span> inputElement <span class="token operator">=</span> screen<span class="token punctuation">.</span><span class="token method function property-access">getByPlaceholderText</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">Add a new task here...</span><span class="token regex-delimiter">/</span><span class="token regex-flags">i</span></span><span class="token punctuation">)</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>inputElement<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toBeInTheDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>

@@ -1,0 +1,15 @@
+<h1 id="tobe-vs-toequal">toBe Vs toEqual<a aria-hidden="true" class="anchor-heading icon-link" href="#tobe-vs-toequal"></a></h1>
+<pre class="language-js"><code class="language-js"><span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">"example tests"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+    <span class="token comment">// Fails as {} !== {}</span>
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">"object assignment 1"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toBe</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token comment">// Passes</span>
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">"object assignment 2"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toEqual</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>toEqual</code> is used to compare equality of objects, arrays etc. whereas <code>toBe</code> can be used for primitives.</p>

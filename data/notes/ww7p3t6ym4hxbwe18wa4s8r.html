@@ -1,0 +1,33 @@
+<h1 id="usequery">useQuery<a aria-hidden="true" class="anchor-heading icon-link" href="#usequery"></a></h1>
+<p>This hook performs the data fetching, caches the results, and provides us with the state of the query. The object returned by useQuery includes the fetched data (<code>query.data</code>), the state of the query (<code>isLoading</code>, <code>isSuccess</code> and <code>isError</code>), and a bunch of methods for interacting with the query.</p>
+<p>Any time the query function throws an error or returns a rejected promise, React Query will treat that as an error, setting the <code>isError</code> state to <code>true</code>, and setting the <code>error</code> property to the thrown or rejected value.</p>
+<h3 id="usage">Usage<a aria-hidden="true" class="anchor-heading icon-link" href="#usage"></a></h3>
+<pre class="language-jsx"><code class="language-jsx">
+<span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span> useQuery <span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'react-query'</span>
+
+<span class="token keyword">function</span> <span class="token function">fetchUser</span> <span class="token punctuation">(</span><span class="token parameter">username</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    <span class="token keyword control-flow">return</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://api.github.com/users/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>username<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> res<span class="token punctuation">.</span><span class="token method function property-access">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> 
+<span class="token punctuation">}</span>
+
+<span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">GithubUser</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> username <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    <span class="token keyword">const</span> userQuery <span class="token operator">=</span> <span class="token function">useQuery</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>username<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token function">fetchUser</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token keyword">const</span> data <span class="token operator">=</span> userQuery<span class="token punctuation">.</span><span class="token property-access">data</span> <span class="token spread operator">...</span> 
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>useQuery</code> accepts two arguments, a query key and a query function.</p>
+<ol>
+<li>The query key is an array used to keep track of the query in the cache. Whenever any of the items in the query key change, React Query treats it as a new query and will fetch new data.</li>
+<li>The query function is the function that actually fetches the data.</li>
+</ol>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/iyolqttxxao1zjmdhwnov8l">Custom Hook</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/qrv35f2jdzohdf9pvbg7lzr">Query Function</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/x9oyvrcqbt8qs8rjbd8ra0t">Query Keys</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Personal-Knowledge-Vault/notes/zwjoqd2nigv77nvy1y6yxla">Queries</a></li>
+</ul>

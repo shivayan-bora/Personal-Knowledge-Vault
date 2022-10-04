@@ -1,0 +1,3110 @@
+{
+  "roots": [
+    {
+      "key": "nd2nkpjzc9hp9yhddsgf49w",
+      "title": "Computer Science",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": [
+        {
+          "key": "goueturxy77jin50lnmzk2z",
+          "title": "Computers",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "cgld9yksnem6oo89wc4tbpk",
+              "title": "Types",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "j37p7pj0i3jtj6dmngoudsb",
+          "title": "Network",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "u83lqu6eppapbyczn708cx5",
+              "title": "DNS",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "8n09sfw3pwjut0wugpst9ce",
+              "title": "HTTP",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "l1zh9pbqqx6yi3vw6yjptvy",
+          "title": "Web Development",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "6cqhc6fnx7jjk3ilmvx18y7",
+              "title": "Backend",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "xp20rwy0xwlnbvsjtbs30ey",
+                  "title": "Language",
+                  "icon": "plusOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": [
+                    {
+                      "key": "bpid42uf4fp9qtnbj7kidh3",
+                      "title": "Java",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": [
+                        {
+                          "key": "rsmiizv63e7uu7fyw1m4657",
+                          "title": "Application Framework",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "dsbmarxkduujunk91y16n64",
+                              "title": "Tools",
+                              "icon": "plusOutlined",
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": [
+                                {
+                                  "key": "fzoyvbxbp4866qbcie1y7rq",
+                                  "title": "Spring",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "31qsh4958qo30gy924wepkb",
+                                      "title": "Annotations",
+                                      "icon": "plusOutlined",
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "cq35cx192wdodxpcir6rtn8",
+                                          "title": "AutoWired",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        },
+                                        {
+                                          "key": "4wfnblb1ri965eyfpzijr8a",
+                                          "title": "Components",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        },
+                                        {
+                                          "key": "zzt0bgqu40dzztqw4dzcahh",
+                                          "title": "SpringBootApplication",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "key": "y0mrghcen00zzcf1nl1o803",
+                                      "title": "Application Properties",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "se6y7pv62m0lv9koc0hwioq",
+                                          "title": "Debug Logs",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "key": "u0ej7by49d8kznppsgrpqe4",
+                                      "title": "Concepts",
+                                      "icon": "plusOutlined",
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "lnbhdefgg0kjjwe19qan3nr",
+                                          "title": "Auto Wiring",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        },
+                                        {
+                                          "key": "rqnt9wfj3z06brctntvc288",
+                                          "title": "Beans",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        },
+                                        {
+                                          "key": "8zi6m0lp6lz6wsx9w89wqlr",
+                                          "title": "Dependency Injection",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": [
+                                            {
+                                              "key": "6qdkcp9ubtot0rjtmqax9rb",
+                                              "title": "How",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "key": "1ix8yz4lp54qkh6w5xj5tzi",
+                                          "title": "Inversion of Control",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": [
+                                            {
+                                              "key": "z4uzqpn3waj7vxkxwv3pohu",
+                                              "title": "Ioc Container",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": [
+                                                {
+                                                  "key": "dbj4dp9sauuo4p28fxj8o1p",
+                                                  "title": "Application Context",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "key": "6hua4k4od3i75ighk36c64n",
+                          "title": "Java Virtual Machine",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": []
+                        },
+                        {
+                          "key": "emmff6etcvlk1a5s4cx1nu8",
+                          "title": "Running Java Programs",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": []
+                        },
+                        {
+                          "key": "brs2l7xf84xe4jyf5jchlzn",
+                          "title": "Structure",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "key": "xukaevbdt4fhvl96x7b8sf3",
+              "title": "Devops",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "zzhwm4exmhvlbn0qg3lx2c6",
+              "title": "Front-end",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "dw98apjcwilnzrope871647",
+                  "title": "Language",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": [
+                    {
+                      "key": "m6wki414zokt20s2xlca1ji",
+                      "title": "CSS",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": [
+                        {
+                          "key": "peq7r9jp1474iuazog913g5",
+                          "title": "Centering",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "o9ic43pp3l17rgqrkf082fr",
+                              "title": "Center div Horizontally",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "8wprqk85rsg7x26qxhvgq7e",
+                              "title": "Center h1 p etc",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "key": "m4oajsjfg172q8ux04jpytd",
+                          "title": "Colour Theory",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "hrf8251trbm9ztsj3ki18ik",
+                              "title": "Colour Wheel",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "ld9fpkqp5sbpzqb90eo5t4c",
+                              "title": "Hsl",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "h3qrdz82evq1xoejgust7o9",
+                              "title": "RGB",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": [
+                                {
+                                  "key": "gtc0a7egdt6hm4dwloxwo19",
+                                  "title": "Primary Colours",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "riqctjk1gn06azznwnyu9fs",
+                                  "title": "Secondary",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "wesirts4y98nqrgqt6y6tk3",
+                                  "title": "Tertiary",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "key": "oglmpu9rbdgiza8xfpuu8nt",
+                          "title": "Flow Layout",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": []
+                        },
+                        {
+                          "key": "lu57cto99igoikn7xrdp8bo",
+                          "title": "Layout",
+                          "icon": "plusOutlined",
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "1rlftkqybn5wtj6ylm0i18i",
+                              "title": "Flexbox",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "key": "4konaz6i8pusjf5ljjq5vqg",
+                          "title": "Responsiveness",
+                          "icon": "plusOutlined",
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "zszj90qp6doqjwxs8iek7rd",
+                              "title": "Meta",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "key": "m89hehsy9w8xyn9hpqmdg5q",
+                          "title": "Selectors",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "i5l2r0q2atkwvz9sulh1b9p",
+                              "title": "Child Selector",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "vbsq8e60bdgg77rugzuja7v",
+                              "title": "Class",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "zqrvq5yvn8ljl5j54ev5vwc",
+                              "title": "Element",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "t0d3zvjj1iral5yg7ejib70",
+                              "title": "Id",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "v1yysv6g3tgwj8wi4br306s",
+                              "title": "Pseudo-Selectors",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "n028g6venbk8vp13eh6suxy",
+                              "title": "Same Styles for Multiple Elements",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "key": "zhbazdmkw7qeyu38ft2dlwc",
+                          "title": "Ways of Adding CSS",
+                          "icon": "plusOutlined",
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "2imke6cnaczoc7zaukrpubq",
+                              "title": "External CSS",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "soi7bzkqf26l2qtr6gzd16k",
+                              "title": "Inline",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "6sjlqv1h6lomfeev5hrg0of",
+                              "title": "Internal Styles",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "key": "z7q1pf4gazwy6tteug48r42",
+                          "title": "Writing Mode",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "key": "iu6tt24tpsu35amafwvi31t",
+                      "title": "HTML",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": [
+                        {
+                          "key": "qn42qihu6s1ugtyr5qfm798",
+                          "title": "Comments",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": []
+                        },
+                        {
+                          "key": "lc1382sq68uahh54wabb7wa",
+                          "title": "Element",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "edkpi04jds06tbs20xghhoj",
+                              "title": "Attributes",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "fnp5i2cawct5ove7lnael47",
+                              "title": "Block Elements",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": [
+                                {
+                                  "key": "jr13tyfv4nnajdhzs47mz2d",
+                                  "title": "Block Vs Inline Elements",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "key": "kklp5upt8fb4wpok5o3zatm",
+                              "title": "Inline Elements",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "wguxzvv8rq4qacfa7n3udti",
+                              "title": "Inline Block Elements",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "key": "43x0c3xsej744ligffe7c4s",
+                          "title": "Semantic",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "k018eteb5m8dfkdlgdevrlg",
+                              "title": "Bold Text",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "qkqyuwhrms4e7biyvoopad8",
+                              "title": "Italics Text",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "key": "sdl7hk5kv9dur1duvnsv8um",
+                          "title": "Structure",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": []
+                        },
+                        {
+                          "key": "r8n4fu2s7z6pl6v3ttxgt52",
+                          "title": "Tags",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "84rcqqyci15oj54k137yqpm",
+                              "title": "Anchor Tag",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "k3gr4an110a0071iu4ddj3f",
+                              "title": "Figure",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "k3ynixhd60kjku708t0fuq7",
+                              "title": "Forms",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": [
+                                {
+                                  "key": "ny3ecpid6jgcv3846jx1o20",
+                                  "title": "Checkbox",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "a4otxf4bvospt0ychwk6rip",
+                                  "title": "Fieldset and Legend",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "rz0jgrv50x5xeziioucixeo",
+                                  "title": "Radio",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "key": "6tx198lvb5hpe28txo08qg7",
+                              "title": "Headers",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "lzwxnejkg7ym2nblayzcaq0",
+                              "title": "Image Tags",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "2mnn9f2fmyel2akwy76b773",
+                              "title": "Table",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "bhtielpw9zq24pa57vmirxc",
+                              "title": "Types",
+                              "icon": "plusOutlined",
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": [
+                                {
+                                  "key": "78qlsgbgsvaze8m3xoeqslw",
+                                  "title": "Normal",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "vicbzfnfkfov3fbvkyq39gv",
+                                  "title": "Self Closing",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "key": "cqh8n0tge21gvfce8cvrqr9",
+                              "title": "Video",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": [
+                                {
+                                  "key": "dnpex7b1vutmz23ws18q6zg",
+                                  "title": "Youtube Videos",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "key": "odsgtatgagtsqs33ntb64tb",
+                              "title": "Why Tags?",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "key": "dkoc8wdzwpdrq4dujm79ye0",
+                      "title": "JavaScript",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": [
+                        {
+                          "key": "q0ahg7jb3pi7xzq422kfwdq",
+                          "title": "CSSStyleDeclaration",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": []
+                        },
+                        {
+                          "key": "x99rfcvy6ln1ffnmgar6zu1",
+                          "title": "DOM",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "18d264ditjt7fmerntuu8uz",
+                              "title": "DOM Node Creation",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "key": "yvkixgpv7wwfoj9nc4vb9l5",
+                          "title": "JavaScript Frameworks",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "2w3vezbxck34yw7192ds1rj",
+                              "title": "React",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": [
+                                {
+                                  "key": "zsb7uvtdhhp0qv09tx729bk",
+                                  "title": "Components",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "4h57qzdo5dd9itcgyf4uhf6",
+                                      "title": "Default Props",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    },
+                                    {
+                                      "key": "qmvybeiw6kaunb6ftpcqek2",
+                                      "title": "PropTypes",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "anvogtpsax0d5xrvennzd66",
+                                          "title": "TS",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "key": "dh2xq6p4hkqp78lsgjy063g",
+                                      "title": "React Fragments",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    },
+                                    {
+                                      "key": "6v026gbdppe969wfl6sdung",
+                                      "title": "Spreading Props",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    },
+                                    {
+                                      "key": "ibiacb6dvi6aql7khvq4gf7",
+                                      "title": "TS",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    },
+                                    {
+                                      "key": "yhln9thjysitk3cyoz6n768",
+                                      "title": "Types",
+                                      "icon": "plusOutlined",
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "lbslp65h4x4huierwe189df",
+                                          "title": "Class",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        },
+                                        {
+                                          "key": "lyom2gsb005pp3npnbmihdn",
+                                          "title": "Functional",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": [
+                                            {
+                                              "key": "ty71oyejbn2n8ztl8vge6lh",
+                                              "title": "Hooks",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": [
+                                                {
+                                                  "key": "3k27flt9m26npha8lacy7h9",
+                                                  "title": "useRef",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": [
+                                                    {
+                                                      "key": "57l61wm9j2oo7x4td5mce1i",
+                                                      "title": "TS",
+                                                      "icon": null,
+                                                      "hasTitleNumberOutlined": false,
+                                                      "vaultName": "vault",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "key": "1k8uzahupveafng9uxud2kf",
+                                                  "title": "useState",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": [
+                                                    {
+                                                      "key": "lneeutybpcnj8rcws9xzqx5",
+                                                      "title": "TS",
+                                                      "icon": null,
+                                                      "hasTitleNumberOutlined": false,
+                                                      "vaultName": "vault",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "key": "ilshzkw5y8bk0we16n1u30s",
+                                                  "title": "Why Hooks",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": [
+                                                    {
+                                                      "key": "wwawi46jxmjji4vjvxmxbq0",
+                                                      "title": "JavaScript",
+                                                      "icon": null,
+                                                      "hasTitleNumberOutlined": false,
+                                                      "vaultName": "vault",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "key": "wn6a6fi5b26y3c1vy9tsmn2",
+                                                      "title": "Lifecycle",
+                                                      "icon": null,
+                                                      "hasTitleNumberOutlined": false,
+                                                      "vaultName": "vault",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "key": "njw1l4r18jwxpm5evcceyha",
+                                                      "title": "Logic Reuse",
+                                                      "icon": null,
+                                                      "hasTitleNumberOutlined": false,
+                                                      "vaultName": "vault",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "key": "5efqj1npo95dbvem931o5ak",
+                                              "title": "TS",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": "jiiyjbgd40wa0v2pv0ehg3e",
+                                  "title": "createElement",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "u9dnc27kcaf790r0t9cixsr",
+                                      "title": "Children",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    },
+                                    {
+                                      "key": "nxn21ponu819x8lsooso64d",
+                                      "title": "createElement vs Returning Elements",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": "mu57b0dfi531wozdmnrywc4",
+                                  "title": "Events",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "xdlxc3s2el6rpdtvyugc1vc",
+                                      "title": "TS",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": "g6uzka8l1u1ifsddevfrmj9",
+                                  "title": "Forms",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "vmbahsqliluhbkbrni71tco",
+                                  "title": "JSX",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "yujc732og4lmlnynziayvm5",
+                                      "title": "Compiling JSX",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": "tacp2xll9h8a4lhwnbd54mt",
+                                  "title": "Rendering Arrays",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "7jyr7um0hlh1yvmsxlm2qyd",
+                                  "title": "State Management",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "9qw8n9xxlyjzjwtl4t3nmoh",
+                                      "title": "Tools",
+                                      "icon": "plusOutlined",
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "8co83flzdjcijmu4u26giwn",
+                                          "title": "React Query",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": [
+                                            {
+                                              "key": "wa73jg5qer18f8p3fihaty1",
+                                              "title": "APIs",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": [
+                                                {
+                                                  "key": "09imt816l4bcxsdqga3jggl",
+                                                  "title": "useMutation",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "42tev1rumbuxcq6hnssdwaq",
+                                                  "title": "useQueries",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "ww7p3t6ym4hxbwe18wa4s8r",
+                                                  "title": "useQuery",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": [
+                                                    {
+                                                      "key": "iyolqttxxao1zjmdhwnov8l",
+                                                      "title": "Custom Hook",
+                                                      "icon": null,
+                                                      "hasTitleNumberOutlined": false,
+                                                      "vaultName": "vault",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "key": "qrv35f2jdzohdf9pvbg7lzr",
+                                                      "title": "Query Function",
+                                                      "icon": null,
+                                                      "hasTitleNumberOutlined": false,
+                                                      "vaultName": "vault",
+                                                      "children": [
+                                                        {
+                                                          "key": "cga1j71wd3t37zm7svs84rg",
+                                                          "title": "Arguments",
+                                                          "icon": null,
+                                                          "hasTitleNumberOutlined": false,
+                                                          "vaultName": "vault",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "key": "x9oyvrcqbt8qs8rjbd8ra0t",
+                                                      "title": "Query Keys",
+                                                      "icon": null,
+                                                      "hasTitleNumberOutlined": false,
+                                                      "vaultName": "vault",
+                                                      "children": [
+                                                        {
+                                                          "key": "a4giff4ll5fjz456rcnp7l1",
+                                                          "title": "Usage",
+                                                          "icon": null,
+                                                          "hasTitleNumberOutlined": false,
+                                                          "vaultName": "vault",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "key": "whlqanpcrioshun6xef07cq",
+                                              "title": "Mutations",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "zwjoqd2nigv77nvy1y6yxla",
+                                              "title": "Queries",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": [
+                                                {
+                                                  "key": "itkavndwlxhyrnsr140qmk8",
+                                                  "title": "QueryClient",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "wf5526w1ivd2waatlynruuo",
+                                                  "title": "QueryClientProvider",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "key": "e8m9ox1ixcc2hu8sren4lj4",
+                                              "title": "Why React Query",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "key": "6k127s80s2qpdc1ezzlpim3",
+                                          "title": "Redux",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": [
+                                            {
+                                              "key": "opnbpisqiqf8svo85clqm21",
+                                              "title": "Actions",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": [
+                                                {
+                                                  "key": "7k8x883966bfuli268a7t9w",
+                                                  "title": "Dispatch",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "key": "ljqo4a8ra6xi9ln3tk3d6ks",
+                                              "title": "Reducer",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "que65pf599hvms64bm46dw5",
+                                              "title": "Store",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "key": "6lyjwtn45ii5e4cpkmqfkrp",
+                                      "title": "Types of Application State",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "zp3wf6ep0tl5u2qkfqocsrk",
+                                          "title": "Client State",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": [
+                                            {
+                                              "key": "u0l1tk4o1kysx28cxpdr2vp",
+                                              "title": "Design",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": [
+                                                {
+                                                  "key": "kwor9uu68paz3kuy4rd5hzr",
+                                                  "title": "Colocating the State",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "3k3jut4tw2brwahs3j28qqz",
+                                                  "title": "Composition",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "qp0uwf7dogj9emc6zjq0mh5",
+                                                  "title": "Global State",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "r8ngopnb8lhaywyiylmo4ni",
+                                                  "title": "Local State",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "jhi4jwkh04kwzd3bp25wofh",
+                                                  "title": "Performance",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "1ipohwlx1rg886x4j5hoqdk",
+                                                  "title": "Prop Drilling",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "key": "f62c8t9mtxjgr7lqbdayfjg",
+                                          "title": "Server State",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": [
+                                            {
+                                              "key": "q808prgzppytbzif5pc6t47",
+                                              "title": "Properties",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "fo7ae2wgrgcipwtbhfqag8b",
+                                              "title": "Requirements",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": "92719d8kme1u53fyqick2sl",
+                                  "title": "Styling",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "gu0abi5qx2jjed89otksyrn",
+                                      "title": "className",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    },
+                                    {
+                                      "key": "5b4hlv21n6usjq6hcwsdx1a",
+                                      "title": "Inline Styles",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": "c9714lxe1h88mieqx1sje9r",
+                                  "title": "Test",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "nby9ee8373c3yb9ugy04vjy",
+                                      "title": "Tools",
+                                      "icon": "plusOutlined",
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "oq3rav3t80a0b8py80pwfsv",
+                                          "title": "React Testing Library",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": [
+                                            {
+                                              "key": "c7pxtfwojkk40aky9h5b55o",
+                                              "title": "Async Tests",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "8vel51jqushz1dd02xjix2d",
+                                              "title": "Element Interaction",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "qwfv2kevv4oxjas3rf2ml7d",
+                                              "title": "Finding Elements",
+                                              "icon": "plusOutlined",
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": [
+                                                {
+                                                  "key": "c94usudbgkp1rmdytku1jox",
+                                                  "title": "Elements with Router",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "juasj6stzaklgy589ka513r",
+                                                  "title": "Find",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "mp77zy4z20zkh9ysbypn82m",
+                                                  "title": "findBy vs getBy vs queryBy",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "duwl0sgnkwobbw1gxf6c1sd",
+                                                  "title": "Get",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "zwv8tszsjunz4bevigdgfu0",
+                                                  "title": "Query",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "key": "njqnlyx7pvokswk3w8c3374",
+                                              "title": "Guiding Principle",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": [
+                                                {
+                                                  "key": "w3chi15w3omejalroqwo5nd",
+                                                  "title": "Priority",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "key": "3pi3qz274245jofrv1etzan",
+                                              "title": "Integration Tests",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "3m33su0agj9nqvkvlixifit",
+                                              "title": "Mock",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "rs29yr4gxcs5me0di2ua4rk",
+                                              "title": "Rendering Elements on Virtual DOM",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "zy5dnn1on96dmwfbcrrdyz2",
+                                              "title": "Setup and Teardown",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "o20qql1or46fl9dj9lnz125",
+                                              "title": "Test Structure",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": [
+                                                {
+                                                  "key": "9p8i1rgwvaj46dwakz2udma",
+                                                  "title": "Assertions",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "vyrivvmu5hdizdvy7aokqkt",
+                                                  "title": "Describe",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "key": "lgzuu1v650d1fy80ycj9ljr",
+                                                  "title": "Test Block",
+                                                  "icon": null,
+                                                  "hasTitleNumberOutlined": false,
+                                                  "vaultName": "vault",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": "um7ih4wttlrb1whn9r6y9lc",
+                                  "title": "Tools",
+                                  "icon": "plusOutlined",
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "pjz13wxbsjhbnhysy1tek7r",
+                                      "title": "Create React App",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    },
+                                    {
+                                      "key": "fq7qt9qaeibh6qbsxjly6f6",
+                                      "title": "Formik",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": "c228dgasmlogs6zw10atldv",
+                                  "title": "Why Use React?",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "fufxlumc2nu8oj9oniuqmys",
+                                      "title": "Composition",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    },
+                                    {
+                                      "key": "xoci9y3gsv4k4z7hjvss9r7",
+                                      "title": "Unidirectional Data Flow",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "key": "kj5tp39bi66yq8qoscvgrhn",
+                          "title": "Network Requests",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "hpwcw5x27k3f1kupdy5l3xb",
+                              "title": "Why Is It Asynchronous?",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "key": "psf2vkxylfc5wr235zux5s6",
+                          "title": "Testing",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "nl8f4uggv1dimc8pdwf4v99",
+                              "title": "Tools",
+                              "icon": "plusOutlined",
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": [
+                                {
+                                  "key": "sfxt5rdl2skv7tliqiu940r",
+                                  "title": "Jest",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "36snyhlwj9jio14ov6w78o0",
+                                      "title": "Assertion",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "7jgurh48dzmf8h9zbjz994n",
+                                          "title": "Async",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        },
+                                        {
+                                          "key": "1d16djtvx8zlc3sqdogkgvy",
+                                          "title": "Matchers",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": [
+                                            {
+                                              "key": "c3u1v2dkiu2q903gjcmkzdx",
+                                              "title": "Arrays",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "ia33lk6d6u0w0shv2lie0ws",
+                                              "title": "Exceptions",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "ftf96tbq5322h8kib5n1axh",
+                                              "title": "Null",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "kdqqdynqv86oayez33kj8o6",
+                                              "title": "Numbers",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "2433w4lqrwgy3qfxjan0n49",
+                                              "title": "Strings",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "4uwua6kpq9c0m3f1hshs6pz",
+                                              "title": "toBe Vs toEqual",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "1cglep39k6tnwpy8hh2s2k3",
+                                              "title": "Truthy or Falsy",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "zh5yqa8xr4j15nhn6fexoun",
+                                              "title": "Undefined",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "key": "z0ae7c1abnjmeubv5gts1f8",
+                                          "title": "Multiple Expects",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        },
+                                        {
+                                          "key": "mf2yqvgrjgx6j7zr03ocgkf",
+                                          "title": "not",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "key": "w0ywzhyy6l2f9gds30a0bi4",
+                                      "title": "Mock",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "4lz8g2g6opi2fe0vh2abo3c",
+                                          "title": "Mock Function",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": [
+                                            {
+                                              "key": "y3nl3w8z650e2my87odsrk8",
+                                              "title": ".mock Property",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "zvx7jl1s27r5xpjdg0040ek",
+                                              "title": "Return Value",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            },
+                                            {
+                                              "key": "ewf0v9091uh6yb3pp8khc57",
+                                              "title": "Spy",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "key": "smhiz8dmmsukpv64i8g08ok",
+                                      "title": "Setup and Teardown",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "02bn2ed7m9s5ji3zx18tlz4",
+                                          "title": "afterAll",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        },
+                                        {
+                                          "key": "8rr69285bf9q7o0szl7m2sv",
+                                          "title": "afterEach",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        },
+                                        {
+                                          "key": "f802ru4izz3ssn48pz0682d",
+                                          "title": "beforeAll",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        },
+                                        {
+                                          "key": "6zsekruzh3wf8r380ledwjk",
+                                          "title": "beforeEach",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        },
+                                        {
+                                          "key": "qkd2oje8qgwtwpzrbg7p8uz",
+                                          "title": "Specific setup and teardown for each block",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "key": "ss0bqxezqxyh9939zygzxem",
+                                      "title": "Test Block",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "5iuj4jm3wz7rfrl1zrk19l7",
+                                          "title": "it",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": [
+                                            {
+                                              "key": "2dc0inu1xjidq9yh89kg5a9",
+                                              "title": "only",
+                                              "icon": null,
+                                              "hasTitleNumberOutlined": false,
+                                              "vaultName": "vault",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "key": "it1gy5g3a73s74fq8uayxjk",
+                                      "title": "Test Suite",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "key": "3hesvvjqy4tf54sy77mpbgv",
+                              "title": "Types",
+                              "icon": "plusOutlined",
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": [
+                                {
+                                  "key": "lomrf3lshqo7cpcn5ggbwa5",
+                                  "title": "End to End Tests",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "tcy6dttkt4xgsxi8ism0l4u",
+                                  "title": "Integration Tests",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "rie0sz22web8picb1r075or",
+                                  "title": "Unit Tests",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "key": "ij4srl7m5ne1x1oitkrdpak",
+                          "title": "Tools",
+                          "icon": "plusOutlined",
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": [
+                            {
+                              "key": "ccvdifllg8uo1taqdfu6loy",
+                              "title": "Axios",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": [
+                                {
+                                  "key": "wxslcdg78drjp87h8lcwu91",
+                                  "title": "Axios Promises",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "eylaprgwjf5dnyytby87tkh",
+                                  "title": "Custom Instance",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "4btehl6exzmof01o1c7n29g",
+                                  "title": "Error Handling",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "w2p8nafbyedoun338oc4vlq",
+                                  "title": "Global Config",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "jti0mu56sw4q208qn74jaa2",
+                                  "title": "Headers",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "xd5xjfp33z0cr3xka8c7rj9",
+                                  "title": "Methods",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "7v8pf5c7rj2hmt2ctcg1ugc",
+                                      "title": "Default",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": [
+                                        {
+                                          "key": "xt4wt9sz1ovae9zba0q0b7w",
+                                          "title": "Request Config",
+                                          "icon": null,
+                                          "hasTitleNumberOutlined": false,
+                                          "vaultName": "vault",
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "key": "oczq49as0hqvmuvnk8md6dy",
+                                      "title": "GET",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    },
+                                    {
+                                      "key": "0dyb1w8loomr1bk2dvqnmpm",
+                                      "title": "POST",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": "byrhx132lt2zk3qgzltw8x6",
+                                  "title": "Multiple Requests",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": []
+                                },
+                                {
+                                  "key": "z9jwwkgwybkcatdnovd97b8",
+                                  "title": "Why Axios",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "fgwh0h3l783kxqdcnpopky8",
+                                      "title": "Advantages",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "key": "0w7fldgq414gxnl05fmpapo",
+                              "title": "Babel",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "ssjc90e0xqnna6kdnzcj18j",
+                              "title": "npm",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": []
+                            },
+                            {
+                              "key": "sdp499ds7w20unr7ygdwloz",
+                              "title": "TypeScript",
+                              "icon": null,
+                              "hasTitleNumberOutlined": false,
+                              "vaultName": "vault",
+                              "children": [
+                                {
+                                  "key": "kjkp02r9b64p2ior2q9axjn",
+                                  "title": "Alias",
+                                  "icon": null,
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "oju1706tjods4vc8vkjdxxk",
+                                      "title": "Difference between Types and Interfaces",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": "3t38r0u6ifzvaggncs6daoc",
+                                  "title": "Types",
+                                  "icon": "plusOutlined",
+                                  "hasTitleNumberOutlined": false,
+                                  "vaultName": "vault",
+                                  "children": [
+                                    {
+                                      "key": "e118qg9lbkwjsp7cnqsl8bj",
+                                      "title": "Basic Types",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    },
+                                    {
+                                      "key": "49th9ka2xjqjl61bvr23mlc",
+                                      "title": "Functions",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    },
+                                    {
+                                      "key": "xlu52erornkgek7w497mweg",
+                                      "title": "Objects",
+                                      "icon": null,
+                                      "hasTitleNumberOutlined": false,
+                                      "vaultName": "vault",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "moclflptspqmdjzdo2mo3x5",
+      "title": "Daily",
+      "icon": "bookOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": [
+        {
+          "key": "v8fcxgyc7dpe0diktmspl4w",
+          "title": "Journal",
+          "icon": "bookOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "007jk3q9yqgny2f1zkefc16",
+              "title": "2022",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "j4mdu8b5nm5l23fi44q8ux2",
+                  "title": "08",
+                  "icon": "bookOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": [
+                    {
+                      "key": "esczak7naq5gqfyaeth2yvc",
+                      "title": "2022-08-29",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "wvvka5dtr8y49ssrhz0ja7d",
+      "title": "Dendron",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": [
+        {
+          "key": "eq4fh39joaxrp8y8qahv8q1",
+          "title": "Templates",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "s51zj6h457wnbv0rccr9td7",
+              "title": "Meeting Notes Template",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "edvmfpgf6qt5795zowm7pfn",
+              "title": "Zettel",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "djmknwf8xylsk3bwbyzgqwa",
+      "title": "Design",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": []
+    },
+    {
+      "key": "ygf9ydcqcmf3bdi4wyk3x58",
+      "title": "Learning",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": [
+        {
+          "key": "20sic8mjhyy6t01dyf3hwrk",
+          "title": "Procrastination",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "w6z7bafs5n9f3jxl0gl2oi7",
+              "title": "Quick Tips",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "gtitiv6sjmb5wtah2qi8ciy",
+          "title": "Remembering Phase",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "npym9umblowt368a03x77yr",
+              "title": "Spacing",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "d5bojyqly441kgfaff3tege",
+          "title": "Second Brain",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "n16ja9hh2pv2fofjelywzt1",
+              "title": "Fundamentals",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "js3o83xdh8dtbqkobqr11os",
+                  "title": "Borrowed Creativity",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                },
+                {
+                  "key": "42al2df93204ly1iw6h8yv2",
+                  "title": "Capture Habit",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                },
+                {
+                  "key": "p9cpcx1yu5597pf3hai2fqd",
+                  "title": "Idea Recycling",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                },
+                {
+                  "key": "n41z5rcdt8t50h1xj394g91",
+                  "title": "Projects over Categories",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "d6gqqoli9vu2s8jwot7ahki",
+          "title": "Time Management",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "c2oofjntm6ma3fkm0beqfjt",
+              "title": "Urgency Trapping",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "9dyahjfz9jud8v9nj1hyl7j",
+                  "title": "Time Vs Task Management",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "v3kk3u64rdtw00jprkpgn0o",
+          "title": "Understanding Phase",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "yvyg4sc6wu8upz1h3x155lu",
+              "title": "Deepen Comprehension",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "1a3u40r3rijwbm8fxxc3sfr",
+              "title": "Mix It Up",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            },
+            {
+              "key": "dp51cb8fpmnmolb8uayq4yj",
+              "title": "Structuring Connections",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "omuf127ul29qp4ebuvejtep",
+      "title": "Meet",
+      "icon": "bookOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": [
+        {
+          "key": "3z46nekldso610hsnqxvnkx",
+          "title": "2022",
+          "icon": "bookOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "7uua4320xmookf5nj0nr3x6",
+              "title": "07",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "ox3zjzf9rmoafy3ntz9ti6j",
+                  "title": "Service Fabric Session",
+                  "icon": "bookOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "2m3ygofcj8yajjevvh51ask",
+      "title": "Notes",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": [
+        {
+          "key": "ntdn6khcjk5sk1bns1hb2v2",
+          "title": "Angular",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "69patgqmpudgcuc7cyli9sk",
+          "title": "Internet Fundamentals",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "72h5htbgffig8fk3uhz5ygh",
+          "title": "Linux",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "q7wq3o6pqbfbutxxme5gizo",
+          "title": "The Web's Next Transformation",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "gznyhq8q8kc5ywe8y1lrxyn",
+          "title": "Procrastination",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "6xavblr20jscvn5gy0qw8ue",
+          "title": "Procreate",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "ez961kgi4njrx0cme414md1",
+          "title": "Redux",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "8pxj3vsxxi38suycj9b9stb",
+          "title": "Vi",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "xd4hijfe97z9cw9otkhfz8u",
+          "title": "Webdev",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "b9usa34mum3s56s60buxilt",
+      "title": "Tags",
+      "icon": "numberOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": [
+        {
+          "key": "cj1hvhhy6vcn6vgyot7k853",
+          "title": "Important",
+          "icon": null,
+          "hasTitleNumberOutlined": true,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "ouk0pw0z0byvj6fd8hvkize",
+          "title": "Todo",
+          "icon": null,
+          "hasTitleNumberOutlined": true,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "w02tp3doq9khvg9wa6vcauj",
+          "title": "TS",
+          "icon": null,
+          "hasTitleNumberOutlined": true,
+          "vaultName": "vault",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "witebak8d2ks87mmo9ofhui",
+      "title": "Templates",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": [
+        {
+          "key": "igyd5ku40qz0wt5mlyx8yfx",
+          "title": "Daily Journal Template",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "mksfjcj8faeo99jygm2nbir",
+          "title": "Literature",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        },
+        {
+          "key": "ndwog24qg0hzfj0xxkbcsuo",
+          "title": "Meeting Notes Template",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "nd2nkpjzc9hp9yhddsgf49w": null,
+    "goueturxy77jin50lnmzk2z": "nd2nkpjzc9hp9yhddsgf49w",
+    "cgld9yksnem6oo89wc4tbpk": "goueturxy77jin50lnmzk2z",
+    "j37p7pj0i3jtj6dmngoudsb": "nd2nkpjzc9hp9yhddsgf49w",
+    "u83lqu6eppapbyczn708cx5": "j37p7pj0i3jtj6dmngoudsb",
+    "8n09sfw3pwjut0wugpst9ce": "j37p7pj0i3jtj6dmngoudsb",
+    "l1zh9pbqqx6yi3vw6yjptvy": "nd2nkpjzc9hp9yhddsgf49w",
+    "6cqhc6fnx7jjk3ilmvx18y7": "l1zh9pbqqx6yi3vw6yjptvy",
+    "xp20rwy0xwlnbvsjtbs30ey": "6cqhc6fnx7jjk3ilmvx18y7",
+    "bpid42uf4fp9qtnbj7kidh3": "xp20rwy0xwlnbvsjtbs30ey",
+    "rsmiizv63e7uu7fyw1m4657": "bpid42uf4fp9qtnbj7kidh3",
+    "dsbmarxkduujunk91y16n64": "rsmiizv63e7uu7fyw1m4657",
+    "fzoyvbxbp4866qbcie1y7rq": "dsbmarxkduujunk91y16n64",
+    "31qsh4958qo30gy924wepkb": "fzoyvbxbp4866qbcie1y7rq",
+    "cq35cx192wdodxpcir6rtn8": "31qsh4958qo30gy924wepkb",
+    "4wfnblb1ri965eyfpzijr8a": "31qsh4958qo30gy924wepkb",
+    "zzt0bgqu40dzztqw4dzcahh": "31qsh4958qo30gy924wepkb",
+    "y0mrghcen00zzcf1nl1o803": "fzoyvbxbp4866qbcie1y7rq",
+    "se6y7pv62m0lv9koc0hwioq": "y0mrghcen00zzcf1nl1o803",
+    "u0ej7by49d8kznppsgrpqe4": "fzoyvbxbp4866qbcie1y7rq",
+    "lnbhdefgg0kjjwe19qan3nr": "u0ej7by49d8kznppsgrpqe4",
+    "rqnt9wfj3z06brctntvc288": "u0ej7by49d8kznppsgrpqe4",
+    "8zi6m0lp6lz6wsx9w89wqlr": "u0ej7by49d8kznppsgrpqe4",
+    "6qdkcp9ubtot0rjtmqax9rb": "8zi6m0lp6lz6wsx9w89wqlr",
+    "1ix8yz4lp54qkh6w5xj5tzi": "u0ej7by49d8kznppsgrpqe4",
+    "z4uzqpn3waj7vxkxwv3pohu": "1ix8yz4lp54qkh6w5xj5tzi",
+    "dbj4dp9sauuo4p28fxj8o1p": "z4uzqpn3waj7vxkxwv3pohu",
+    "6hua4k4od3i75ighk36c64n": "bpid42uf4fp9qtnbj7kidh3",
+    "emmff6etcvlk1a5s4cx1nu8": "bpid42uf4fp9qtnbj7kidh3",
+    "brs2l7xf84xe4jyf5jchlzn": "bpid42uf4fp9qtnbj7kidh3",
+    "xukaevbdt4fhvl96x7b8sf3": "l1zh9pbqqx6yi3vw6yjptvy",
+    "zzhwm4exmhvlbn0qg3lx2c6": "l1zh9pbqqx6yi3vw6yjptvy",
+    "dw98apjcwilnzrope871647": "zzhwm4exmhvlbn0qg3lx2c6",
+    "m6wki414zokt20s2xlca1ji": "dw98apjcwilnzrope871647",
+    "peq7r9jp1474iuazog913g5": "m6wki414zokt20s2xlca1ji",
+    "o9ic43pp3l17rgqrkf082fr": "peq7r9jp1474iuazog913g5",
+    "8wprqk85rsg7x26qxhvgq7e": "peq7r9jp1474iuazog913g5",
+    "m4oajsjfg172q8ux04jpytd": "m6wki414zokt20s2xlca1ji",
+    "hrf8251trbm9ztsj3ki18ik": "m4oajsjfg172q8ux04jpytd",
+    "ld9fpkqp5sbpzqb90eo5t4c": "m4oajsjfg172q8ux04jpytd",
+    "h3qrdz82evq1xoejgust7o9": "m4oajsjfg172q8ux04jpytd",
+    "gtc0a7egdt6hm4dwloxwo19": "h3qrdz82evq1xoejgust7o9",
+    "riqctjk1gn06azznwnyu9fs": "h3qrdz82evq1xoejgust7o9",
+    "wesirts4y98nqrgqt6y6tk3": "h3qrdz82evq1xoejgust7o9",
+    "oglmpu9rbdgiza8xfpuu8nt": "m6wki414zokt20s2xlca1ji",
+    "lu57cto99igoikn7xrdp8bo": "m6wki414zokt20s2xlca1ji",
+    "1rlftkqybn5wtj6ylm0i18i": "lu57cto99igoikn7xrdp8bo",
+    "4konaz6i8pusjf5ljjq5vqg": "m6wki414zokt20s2xlca1ji",
+    "zszj90qp6doqjwxs8iek7rd": "4konaz6i8pusjf5ljjq5vqg",
+    "m89hehsy9w8xyn9hpqmdg5q": "m6wki414zokt20s2xlca1ji",
+    "i5l2r0q2atkwvz9sulh1b9p": "m89hehsy9w8xyn9hpqmdg5q",
+    "vbsq8e60bdgg77rugzuja7v": "m89hehsy9w8xyn9hpqmdg5q",
+    "zqrvq5yvn8ljl5j54ev5vwc": "m89hehsy9w8xyn9hpqmdg5q",
+    "t0d3zvjj1iral5yg7ejib70": "m89hehsy9w8xyn9hpqmdg5q",
+    "v1yysv6g3tgwj8wi4br306s": "m89hehsy9w8xyn9hpqmdg5q",
+    "n028g6venbk8vp13eh6suxy": "m89hehsy9w8xyn9hpqmdg5q",
+    "zhbazdmkw7qeyu38ft2dlwc": "m6wki414zokt20s2xlca1ji",
+    "2imke6cnaczoc7zaukrpubq": "zhbazdmkw7qeyu38ft2dlwc",
+    "soi7bzkqf26l2qtr6gzd16k": "zhbazdmkw7qeyu38ft2dlwc",
+    "6sjlqv1h6lomfeev5hrg0of": "zhbazdmkw7qeyu38ft2dlwc",
+    "z7q1pf4gazwy6tteug48r42": "m6wki414zokt20s2xlca1ji",
+    "iu6tt24tpsu35amafwvi31t": "dw98apjcwilnzrope871647",
+    "qn42qihu6s1ugtyr5qfm798": "iu6tt24tpsu35amafwvi31t",
+    "lc1382sq68uahh54wabb7wa": "iu6tt24tpsu35amafwvi31t",
+    "edkpi04jds06tbs20xghhoj": "lc1382sq68uahh54wabb7wa",
+    "fnp5i2cawct5ove7lnael47": "lc1382sq68uahh54wabb7wa",
+    "jr13tyfv4nnajdhzs47mz2d": "fnp5i2cawct5ove7lnael47",
+    "kklp5upt8fb4wpok5o3zatm": "lc1382sq68uahh54wabb7wa",
+    "wguxzvv8rq4qacfa7n3udti": "lc1382sq68uahh54wabb7wa",
+    "43x0c3xsej744ligffe7c4s": "iu6tt24tpsu35amafwvi31t",
+    "k018eteb5m8dfkdlgdevrlg": "43x0c3xsej744ligffe7c4s",
+    "qkqyuwhrms4e7biyvoopad8": "43x0c3xsej744ligffe7c4s",
+    "sdl7hk5kv9dur1duvnsv8um": "iu6tt24tpsu35amafwvi31t",
+    "r8n4fu2s7z6pl6v3ttxgt52": "iu6tt24tpsu35amafwvi31t",
+    "84rcqqyci15oj54k137yqpm": "r8n4fu2s7z6pl6v3ttxgt52",
+    "k3gr4an110a0071iu4ddj3f": "r8n4fu2s7z6pl6v3ttxgt52",
+    "k3ynixhd60kjku708t0fuq7": "r8n4fu2s7z6pl6v3ttxgt52",
+    "ny3ecpid6jgcv3846jx1o20": "k3ynixhd60kjku708t0fuq7",
+    "a4otxf4bvospt0ychwk6rip": "k3ynixhd60kjku708t0fuq7",
+    "rz0jgrv50x5xeziioucixeo": "k3ynixhd60kjku708t0fuq7",
+    "6tx198lvb5hpe28txo08qg7": "r8n4fu2s7z6pl6v3ttxgt52",
+    "lzwxnejkg7ym2nblayzcaq0": "r8n4fu2s7z6pl6v3ttxgt52",
+    "2mnn9f2fmyel2akwy76b773": "r8n4fu2s7z6pl6v3ttxgt52",
+    "bhtielpw9zq24pa57vmirxc": "r8n4fu2s7z6pl6v3ttxgt52",
+    "78qlsgbgsvaze8m3xoeqslw": "bhtielpw9zq24pa57vmirxc",
+    "vicbzfnfkfov3fbvkyq39gv": "bhtielpw9zq24pa57vmirxc",
+    "cqh8n0tge21gvfce8cvrqr9": "r8n4fu2s7z6pl6v3ttxgt52",
+    "dnpex7b1vutmz23ws18q6zg": "cqh8n0tge21gvfce8cvrqr9",
+    "odsgtatgagtsqs33ntb64tb": "r8n4fu2s7z6pl6v3ttxgt52",
+    "dkoc8wdzwpdrq4dujm79ye0": "dw98apjcwilnzrope871647",
+    "q0ahg7jb3pi7xzq422kfwdq": "dkoc8wdzwpdrq4dujm79ye0",
+    "x99rfcvy6ln1ffnmgar6zu1": "dkoc8wdzwpdrq4dujm79ye0",
+    "18d264ditjt7fmerntuu8uz": "x99rfcvy6ln1ffnmgar6zu1",
+    "yvkixgpv7wwfoj9nc4vb9l5": "dkoc8wdzwpdrq4dujm79ye0",
+    "2w3vezbxck34yw7192ds1rj": "yvkixgpv7wwfoj9nc4vb9l5",
+    "zsb7uvtdhhp0qv09tx729bk": "2w3vezbxck34yw7192ds1rj",
+    "4h57qzdo5dd9itcgyf4uhf6": "zsb7uvtdhhp0qv09tx729bk",
+    "qmvybeiw6kaunb6ftpcqek2": "zsb7uvtdhhp0qv09tx729bk",
+    "anvogtpsax0d5xrvennzd66": "qmvybeiw6kaunb6ftpcqek2",
+    "dh2xq6p4hkqp78lsgjy063g": "zsb7uvtdhhp0qv09tx729bk",
+    "6v026gbdppe969wfl6sdung": "zsb7uvtdhhp0qv09tx729bk",
+    "ibiacb6dvi6aql7khvq4gf7": "zsb7uvtdhhp0qv09tx729bk",
+    "yhln9thjysitk3cyoz6n768": "zsb7uvtdhhp0qv09tx729bk",
+    "lbslp65h4x4huierwe189df": "yhln9thjysitk3cyoz6n768",
+    "lyom2gsb005pp3npnbmihdn": "yhln9thjysitk3cyoz6n768",
+    "ty71oyejbn2n8ztl8vge6lh": "lyom2gsb005pp3npnbmihdn",
+    "3k27flt9m26npha8lacy7h9": "ty71oyejbn2n8ztl8vge6lh",
+    "57l61wm9j2oo7x4td5mce1i": "3k27flt9m26npha8lacy7h9",
+    "1k8uzahupveafng9uxud2kf": "ty71oyejbn2n8ztl8vge6lh",
+    "lneeutybpcnj8rcws9xzqx5": "1k8uzahupveafng9uxud2kf",
+    "ilshzkw5y8bk0we16n1u30s": "ty71oyejbn2n8ztl8vge6lh",
+    "wwawi46jxmjji4vjvxmxbq0": "ilshzkw5y8bk0we16n1u30s",
+    "wn6a6fi5b26y3c1vy9tsmn2": "ilshzkw5y8bk0we16n1u30s",
+    "njw1l4r18jwxpm5evcceyha": "ilshzkw5y8bk0we16n1u30s",
+    "5efqj1npo95dbvem931o5ak": "lyom2gsb005pp3npnbmihdn",
+    "jiiyjbgd40wa0v2pv0ehg3e": "2w3vezbxck34yw7192ds1rj",
+    "u9dnc27kcaf790r0t9cixsr": "jiiyjbgd40wa0v2pv0ehg3e",
+    "nxn21ponu819x8lsooso64d": "jiiyjbgd40wa0v2pv0ehg3e",
+    "mu57b0dfi531wozdmnrywc4": "2w3vezbxck34yw7192ds1rj",
+    "xdlxc3s2el6rpdtvyugc1vc": "mu57b0dfi531wozdmnrywc4",
+    "g6uzka8l1u1ifsddevfrmj9": "2w3vezbxck34yw7192ds1rj",
+    "vmbahsqliluhbkbrni71tco": "2w3vezbxck34yw7192ds1rj",
+    "yujc732og4lmlnynziayvm5": "vmbahsqliluhbkbrni71tco",
+    "tacp2xll9h8a4lhwnbd54mt": "2w3vezbxck34yw7192ds1rj",
+    "7jyr7um0hlh1yvmsxlm2qyd": "2w3vezbxck34yw7192ds1rj",
+    "9qw8n9xxlyjzjwtl4t3nmoh": "7jyr7um0hlh1yvmsxlm2qyd",
+    "8co83flzdjcijmu4u26giwn": "9qw8n9xxlyjzjwtl4t3nmoh",
+    "wa73jg5qer18f8p3fihaty1": "8co83flzdjcijmu4u26giwn",
+    "09imt816l4bcxsdqga3jggl": "wa73jg5qer18f8p3fihaty1",
+    "42tev1rumbuxcq6hnssdwaq": "wa73jg5qer18f8p3fihaty1",
+    "ww7p3t6ym4hxbwe18wa4s8r": "wa73jg5qer18f8p3fihaty1",
+    "iyolqttxxao1zjmdhwnov8l": "ww7p3t6ym4hxbwe18wa4s8r",
+    "qrv35f2jdzohdf9pvbg7lzr": "ww7p3t6ym4hxbwe18wa4s8r",
+    "cga1j71wd3t37zm7svs84rg": "qrv35f2jdzohdf9pvbg7lzr",
+    "x9oyvrcqbt8qs8rjbd8ra0t": "ww7p3t6ym4hxbwe18wa4s8r",
+    "a4giff4ll5fjz456rcnp7l1": "x9oyvrcqbt8qs8rjbd8ra0t",
+    "whlqanpcrioshun6xef07cq": "8co83flzdjcijmu4u26giwn",
+    "zwjoqd2nigv77nvy1y6yxla": "8co83flzdjcijmu4u26giwn",
+    "itkavndwlxhyrnsr140qmk8": "zwjoqd2nigv77nvy1y6yxla",
+    "wf5526w1ivd2waatlynruuo": "zwjoqd2nigv77nvy1y6yxla",
+    "e8m9ox1ixcc2hu8sren4lj4": "8co83flzdjcijmu4u26giwn",
+    "6k127s80s2qpdc1ezzlpim3": "9qw8n9xxlyjzjwtl4t3nmoh",
+    "opnbpisqiqf8svo85clqm21": "6k127s80s2qpdc1ezzlpim3",
+    "7k8x883966bfuli268a7t9w": "opnbpisqiqf8svo85clqm21",
+    "ljqo4a8ra6xi9ln3tk3d6ks": "6k127s80s2qpdc1ezzlpim3",
+    "que65pf599hvms64bm46dw5": "6k127s80s2qpdc1ezzlpim3",
+    "6lyjwtn45ii5e4cpkmqfkrp": "7jyr7um0hlh1yvmsxlm2qyd",
+    "zp3wf6ep0tl5u2qkfqocsrk": "6lyjwtn45ii5e4cpkmqfkrp",
+    "u0l1tk4o1kysx28cxpdr2vp": "zp3wf6ep0tl5u2qkfqocsrk",
+    "kwor9uu68paz3kuy4rd5hzr": "u0l1tk4o1kysx28cxpdr2vp",
+    "3k3jut4tw2brwahs3j28qqz": "u0l1tk4o1kysx28cxpdr2vp",
+    "qp0uwf7dogj9emc6zjq0mh5": "u0l1tk4o1kysx28cxpdr2vp",
+    "r8ngopnb8lhaywyiylmo4ni": "u0l1tk4o1kysx28cxpdr2vp",
+    "jhi4jwkh04kwzd3bp25wofh": "u0l1tk4o1kysx28cxpdr2vp",
+    "1ipohwlx1rg886x4j5hoqdk": "u0l1tk4o1kysx28cxpdr2vp",
+    "f62c8t9mtxjgr7lqbdayfjg": "6lyjwtn45ii5e4cpkmqfkrp",
+    "q808prgzppytbzif5pc6t47": "f62c8t9mtxjgr7lqbdayfjg",
+    "fo7ae2wgrgcipwtbhfqag8b": "f62c8t9mtxjgr7lqbdayfjg",
+    "92719d8kme1u53fyqick2sl": "2w3vezbxck34yw7192ds1rj",
+    "gu0abi5qx2jjed89otksyrn": "92719d8kme1u53fyqick2sl",
+    "5b4hlv21n6usjq6hcwsdx1a": "92719d8kme1u53fyqick2sl",
+    "c9714lxe1h88mieqx1sje9r": "2w3vezbxck34yw7192ds1rj",
+    "nby9ee8373c3yb9ugy04vjy": "c9714lxe1h88mieqx1sje9r",
+    "oq3rav3t80a0b8py80pwfsv": "nby9ee8373c3yb9ugy04vjy",
+    "c7pxtfwojkk40aky9h5b55o": "oq3rav3t80a0b8py80pwfsv",
+    "8vel51jqushz1dd02xjix2d": "oq3rav3t80a0b8py80pwfsv",
+    "qwfv2kevv4oxjas3rf2ml7d": "oq3rav3t80a0b8py80pwfsv",
+    "c94usudbgkp1rmdytku1jox": "qwfv2kevv4oxjas3rf2ml7d",
+    "juasj6stzaklgy589ka513r": "qwfv2kevv4oxjas3rf2ml7d",
+    "mp77zy4z20zkh9ysbypn82m": "qwfv2kevv4oxjas3rf2ml7d",
+    "duwl0sgnkwobbw1gxf6c1sd": "qwfv2kevv4oxjas3rf2ml7d",
+    "zwv8tszsjunz4bevigdgfu0": "qwfv2kevv4oxjas3rf2ml7d",
+    "njqnlyx7pvokswk3w8c3374": "oq3rav3t80a0b8py80pwfsv",
+    "w3chi15w3omejalroqwo5nd": "njqnlyx7pvokswk3w8c3374",
+    "3pi3qz274245jofrv1etzan": "oq3rav3t80a0b8py80pwfsv",
+    "3m33su0agj9nqvkvlixifit": "oq3rav3t80a0b8py80pwfsv",
+    "rs29yr4gxcs5me0di2ua4rk": "oq3rav3t80a0b8py80pwfsv",
+    "zy5dnn1on96dmwfbcrrdyz2": "oq3rav3t80a0b8py80pwfsv",
+    "o20qql1or46fl9dj9lnz125": "oq3rav3t80a0b8py80pwfsv",
+    "9p8i1rgwvaj46dwakz2udma": "o20qql1or46fl9dj9lnz125",
+    "vyrivvmu5hdizdvy7aokqkt": "o20qql1or46fl9dj9lnz125",
+    "lgzuu1v650d1fy80ycj9ljr": "o20qql1or46fl9dj9lnz125",
+    "um7ih4wttlrb1whn9r6y9lc": "2w3vezbxck34yw7192ds1rj",
+    "pjz13wxbsjhbnhysy1tek7r": "um7ih4wttlrb1whn9r6y9lc",
+    "fq7qt9qaeibh6qbsxjly6f6": "um7ih4wttlrb1whn9r6y9lc",
+    "c228dgasmlogs6zw10atldv": "2w3vezbxck34yw7192ds1rj",
+    "fufxlumc2nu8oj9oniuqmys": "c228dgasmlogs6zw10atldv",
+    "xoci9y3gsv4k4z7hjvss9r7": "c228dgasmlogs6zw10atldv",
+    "kj5tp39bi66yq8qoscvgrhn": "dkoc8wdzwpdrq4dujm79ye0",
+    "hpwcw5x27k3f1kupdy5l3xb": "kj5tp39bi66yq8qoscvgrhn",
+    "psf2vkxylfc5wr235zux5s6": "dkoc8wdzwpdrq4dujm79ye0",
+    "nl8f4uggv1dimc8pdwf4v99": "psf2vkxylfc5wr235zux5s6",
+    "sfxt5rdl2skv7tliqiu940r": "nl8f4uggv1dimc8pdwf4v99",
+    "36snyhlwj9jio14ov6w78o0": "sfxt5rdl2skv7tliqiu940r",
+    "7jgurh48dzmf8h9zbjz994n": "36snyhlwj9jio14ov6w78o0",
+    "1d16djtvx8zlc3sqdogkgvy": "36snyhlwj9jio14ov6w78o0",
+    "c3u1v2dkiu2q903gjcmkzdx": "1d16djtvx8zlc3sqdogkgvy",
+    "ia33lk6d6u0w0shv2lie0ws": "1d16djtvx8zlc3sqdogkgvy",
+    "ftf96tbq5322h8kib5n1axh": "1d16djtvx8zlc3sqdogkgvy",
+    "kdqqdynqv86oayez33kj8o6": "1d16djtvx8zlc3sqdogkgvy",
+    "2433w4lqrwgy3qfxjan0n49": "1d16djtvx8zlc3sqdogkgvy",
+    "4uwua6kpq9c0m3f1hshs6pz": "1d16djtvx8zlc3sqdogkgvy",
+    "1cglep39k6tnwpy8hh2s2k3": "1d16djtvx8zlc3sqdogkgvy",
+    "zh5yqa8xr4j15nhn6fexoun": "1d16djtvx8zlc3sqdogkgvy",
+    "z0ae7c1abnjmeubv5gts1f8": "36snyhlwj9jio14ov6w78o0",
+    "mf2yqvgrjgx6j7zr03ocgkf": "36snyhlwj9jio14ov6w78o0",
+    "w0ywzhyy6l2f9gds30a0bi4": "sfxt5rdl2skv7tliqiu940r",
+    "4lz8g2g6opi2fe0vh2abo3c": "w0ywzhyy6l2f9gds30a0bi4",
+    "y3nl3w8z650e2my87odsrk8": "4lz8g2g6opi2fe0vh2abo3c",
+    "zvx7jl1s27r5xpjdg0040ek": "4lz8g2g6opi2fe0vh2abo3c",
+    "ewf0v9091uh6yb3pp8khc57": "4lz8g2g6opi2fe0vh2abo3c",
+    "smhiz8dmmsukpv64i8g08ok": "sfxt5rdl2skv7tliqiu940r",
+    "02bn2ed7m9s5ji3zx18tlz4": "smhiz8dmmsukpv64i8g08ok",
+    "8rr69285bf9q7o0szl7m2sv": "smhiz8dmmsukpv64i8g08ok",
+    "f802ru4izz3ssn48pz0682d": "smhiz8dmmsukpv64i8g08ok",
+    "6zsekruzh3wf8r380ledwjk": "smhiz8dmmsukpv64i8g08ok",
+    "qkd2oje8qgwtwpzrbg7p8uz": "smhiz8dmmsukpv64i8g08ok",
+    "ss0bqxezqxyh9939zygzxem": "sfxt5rdl2skv7tliqiu940r",
+    "5iuj4jm3wz7rfrl1zrk19l7": "ss0bqxezqxyh9939zygzxem",
+    "2dc0inu1xjidq9yh89kg5a9": "5iuj4jm3wz7rfrl1zrk19l7",
+    "it1gy5g3a73s74fq8uayxjk": "sfxt5rdl2skv7tliqiu940r",
+    "3hesvvjqy4tf54sy77mpbgv": "psf2vkxylfc5wr235zux5s6",
+    "lomrf3lshqo7cpcn5ggbwa5": "3hesvvjqy4tf54sy77mpbgv",
+    "tcy6dttkt4xgsxi8ism0l4u": "3hesvvjqy4tf54sy77mpbgv",
+    "rie0sz22web8picb1r075or": "3hesvvjqy4tf54sy77mpbgv",
+    "ij4srl7m5ne1x1oitkrdpak": "dkoc8wdzwpdrq4dujm79ye0",
+    "ccvdifllg8uo1taqdfu6loy": "ij4srl7m5ne1x1oitkrdpak",
+    "wxslcdg78drjp87h8lcwu91": "ccvdifllg8uo1taqdfu6loy",
+    "eylaprgwjf5dnyytby87tkh": "ccvdifllg8uo1taqdfu6loy",
+    "4btehl6exzmof01o1c7n29g": "ccvdifllg8uo1taqdfu6loy",
+    "w2p8nafbyedoun338oc4vlq": "ccvdifllg8uo1taqdfu6loy",
+    "jti0mu56sw4q208qn74jaa2": "ccvdifllg8uo1taqdfu6loy",
+    "xd5xjfp33z0cr3xka8c7rj9": "ccvdifllg8uo1taqdfu6loy",
+    "7v8pf5c7rj2hmt2ctcg1ugc": "xd5xjfp33z0cr3xka8c7rj9",
+    "xt4wt9sz1ovae9zba0q0b7w": "7v8pf5c7rj2hmt2ctcg1ugc",
+    "oczq49as0hqvmuvnk8md6dy": "xd5xjfp33z0cr3xka8c7rj9",
+    "0dyb1w8loomr1bk2dvqnmpm": "xd5xjfp33z0cr3xka8c7rj9",
+    "byrhx132lt2zk3qgzltw8x6": "ccvdifllg8uo1taqdfu6loy",
+    "z9jwwkgwybkcatdnovd97b8": "ccvdifllg8uo1taqdfu6loy",
+    "fgwh0h3l783kxqdcnpopky8": "z9jwwkgwybkcatdnovd97b8",
+    "0w7fldgq414gxnl05fmpapo": "ij4srl7m5ne1x1oitkrdpak",
+    "ssjc90e0xqnna6kdnzcj18j": "ij4srl7m5ne1x1oitkrdpak",
+    "sdp499ds7w20unr7ygdwloz": "ij4srl7m5ne1x1oitkrdpak",
+    "kjkp02r9b64p2ior2q9axjn": "sdp499ds7w20unr7ygdwloz",
+    "oju1706tjods4vc8vkjdxxk": "kjkp02r9b64p2ior2q9axjn",
+    "3t38r0u6ifzvaggncs6daoc": "sdp499ds7w20unr7ygdwloz",
+    "e118qg9lbkwjsp7cnqsl8bj": "3t38r0u6ifzvaggncs6daoc",
+    "49th9ka2xjqjl61bvr23mlc": "3t38r0u6ifzvaggncs6daoc",
+    "xlu52erornkgek7w497mweg": "3t38r0u6ifzvaggncs6daoc",
+    "moclflptspqmdjzdo2mo3x5": null,
+    "v8fcxgyc7dpe0diktmspl4w": "moclflptspqmdjzdo2mo3x5",
+    "007jk3q9yqgny2f1zkefc16": "v8fcxgyc7dpe0diktmspl4w",
+    "j4mdu8b5nm5l23fi44q8ux2": "007jk3q9yqgny2f1zkefc16",
+    "esczak7naq5gqfyaeth2yvc": "j4mdu8b5nm5l23fi44q8ux2",
+    "wvvka5dtr8y49ssrhz0ja7d": null,
+    "eq4fh39joaxrp8y8qahv8q1": "wvvka5dtr8y49ssrhz0ja7d",
+    "s51zj6h457wnbv0rccr9td7": "eq4fh39joaxrp8y8qahv8q1",
+    "edvmfpgf6qt5795zowm7pfn": "eq4fh39joaxrp8y8qahv8q1",
+    "djmknwf8xylsk3bwbyzgqwa": null,
+    "ygf9ydcqcmf3bdi4wyk3x58": null,
+    "20sic8mjhyy6t01dyf3hwrk": "ygf9ydcqcmf3bdi4wyk3x58",
+    "w6z7bafs5n9f3jxl0gl2oi7": "20sic8mjhyy6t01dyf3hwrk",
+    "gtitiv6sjmb5wtah2qi8ciy": "ygf9ydcqcmf3bdi4wyk3x58",
+    "npym9umblowt368a03x77yr": "gtitiv6sjmb5wtah2qi8ciy",
+    "d5bojyqly441kgfaff3tege": "ygf9ydcqcmf3bdi4wyk3x58",
+    "n16ja9hh2pv2fofjelywzt1": "d5bojyqly441kgfaff3tege",
+    "js3o83xdh8dtbqkobqr11os": "n16ja9hh2pv2fofjelywzt1",
+    "42al2df93204ly1iw6h8yv2": "n16ja9hh2pv2fofjelywzt1",
+    "p9cpcx1yu5597pf3hai2fqd": "n16ja9hh2pv2fofjelywzt1",
+    "n41z5rcdt8t50h1xj394g91": "n16ja9hh2pv2fofjelywzt1",
+    "d6gqqoli9vu2s8jwot7ahki": "ygf9ydcqcmf3bdi4wyk3x58",
+    "c2oofjntm6ma3fkm0beqfjt": "d6gqqoli9vu2s8jwot7ahki",
+    "9dyahjfz9jud8v9nj1hyl7j": "c2oofjntm6ma3fkm0beqfjt",
+    "v3kk3u64rdtw00jprkpgn0o": "ygf9ydcqcmf3bdi4wyk3x58",
+    "yvyg4sc6wu8upz1h3x155lu": "v3kk3u64rdtw00jprkpgn0o",
+    "1a3u40r3rijwbm8fxxc3sfr": "v3kk3u64rdtw00jprkpgn0o",
+    "dp51cb8fpmnmolb8uayq4yj": "v3kk3u64rdtw00jprkpgn0o",
+    "omuf127ul29qp4ebuvejtep": null,
+    "3z46nekldso610hsnqxvnkx": "omuf127ul29qp4ebuvejtep",
+    "7uua4320xmookf5nj0nr3x6": "3z46nekldso610hsnqxvnkx",
+    "ox3zjzf9rmoafy3ntz9ti6j": "7uua4320xmookf5nj0nr3x6",
+    "2m3ygofcj8yajjevvh51ask": null,
+    "ntdn6khcjk5sk1bns1hb2v2": "2m3ygofcj8yajjevvh51ask",
+    "69patgqmpudgcuc7cyli9sk": "2m3ygofcj8yajjevvh51ask",
+    "72h5htbgffig8fk3uhz5ygh": "2m3ygofcj8yajjevvh51ask",
+    "q7wq3o6pqbfbutxxme5gizo": "2m3ygofcj8yajjevvh51ask",
+    "gznyhq8q8kc5ywe8y1lrxyn": "2m3ygofcj8yajjevvh51ask",
+    "6xavblr20jscvn5gy0qw8ue": "2m3ygofcj8yajjevvh51ask",
+    "ez961kgi4njrx0cme414md1": "2m3ygofcj8yajjevvh51ask",
+    "8pxj3vsxxi38suycj9b9stb": "2m3ygofcj8yajjevvh51ask",
+    "xd4hijfe97z9cw9otkhfz8u": "2m3ygofcj8yajjevvh51ask",
+    "b9usa34mum3s56s60buxilt": null,
+    "cj1hvhhy6vcn6vgyot7k853": "b9usa34mum3s56s60buxilt",
+    "ouk0pw0z0byvj6fd8hvkize": "b9usa34mum3s56s60buxilt",
+    "w02tp3doq9khvg9wa6vcauj": "b9usa34mum3s56s60buxilt",
+    "witebak8d2ks87mmo9ofhui": null,
+    "igyd5ku40qz0wt5mlyx8yfx": "witebak8d2ks87mmo9ofhui",
+    "mksfjcj8faeo99jygm2nbir": "witebak8d2ks87mmo9ofhui",
+    "ndwog24qg0hzfj0xxkbcsuo": "witebak8d2ks87mmo9ofhui"
+  },
+  "notesLabelById": {
+    "nd2nkpjzc9hp9yhddsgf49w": "Computer Science",
+    "goueturxy77jin50lnmzk2z": "Computers",
+    "cgld9yksnem6oo89wc4tbpk": "Types",
+    "j37p7pj0i3jtj6dmngoudsb": "Network",
+    "u83lqu6eppapbyczn708cx5": "DNS",
+    "8n09sfw3pwjut0wugpst9ce": "HTTP",
+    "l1zh9pbqqx6yi3vw6yjptvy": "Web Development",
+    "6cqhc6fnx7jjk3ilmvx18y7": "Backend",
+    "xp20rwy0xwlnbvsjtbs30ey": "Language",
+    "bpid42uf4fp9qtnbj7kidh3": "Java",
+    "rsmiizv63e7uu7fyw1m4657": "Application Framework",
+    "dsbmarxkduujunk91y16n64": "Tools",
+    "fzoyvbxbp4866qbcie1y7rq": "Spring",
+    "31qsh4958qo30gy924wepkb": "Annotations",
+    "cq35cx192wdodxpcir6rtn8": "AutoWired",
+    "4wfnblb1ri965eyfpzijr8a": "Components",
+    "zzt0bgqu40dzztqw4dzcahh": "SpringBootApplication",
+    "y0mrghcen00zzcf1nl1o803": "Application Properties",
+    "se6y7pv62m0lv9koc0hwioq": "Debug Logs",
+    "u0ej7by49d8kznppsgrpqe4": "Concepts",
+    "lnbhdefgg0kjjwe19qan3nr": "Auto Wiring",
+    "rqnt9wfj3z06brctntvc288": "Beans",
+    "8zi6m0lp6lz6wsx9w89wqlr": "Dependency Injection",
+    "6qdkcp9ubtot0rjtmqax9rb": "How",
+    "1ix8yz4lp54qkh6w5xj5tzi": "Inversion of Control",
+    "z4uzqpn3waj7vxkxwv3pohu": "Ioc Container",
+    "dbj4dp9sauuo4p28fxj8o1p": "Application Context",
+    "6hua4k4od3i75ighk36c64n": "Java Virtual Machine",
+    "emmff6etcvlk1a5s4cx1nu8": "Running Java Programs",
+    "brs2l7xf84xe4jyf5jchlzn": "Structure",
+    "xukaevbdt4fhvl96x7b8sf3": "Devops",
+    "zzhwm4exmhvlbn0qg3lx2c6": "Front-end",
+    "dw98apjcwilnzrope871647": "Language",
+    "m6wki414zokt20s2xlca1ji": "CSS",
+    "peq7r9jp1474iuazog913g5": "Centering",
+    "o9ic43pp3l17rgqrkf082fr": "Center div Horizontally",
+    "8wprqk85rsg7x26qxhvgq7e": "Center h1 p etc",
+    "m4oajsjfg172q8ux04jpytd": "Colour Theory",
+    "hrf8251trbm9ztsj3ki18ik": "Colour Wheel",
+    "ld9fpkqp5sbpzqb90eo5t4c": "Hsl",
+    "h3qrdz82evq1xoejgust7o9": "RGB",
+    "gtc0a7egdt6hm4dwloxwo19": "Primary Colours",
+    "riqctjk1gn06azznwnyu9fs": "Secondary",
+    "wesirts4y98nqrgqt6y6tk3": "Tertiary",
+    "oglmpu9rbdgiza8xfpuu8nt": "Flow Layout",
+    "lu57cto99igoikn7xrdp8bo": "Layout",
+    "1rlftkqybn5wtj6ylm0i18i": "Flexbox",
+    "4konaz6i8pusjf5ljjq5vqg": "Responsiveness",
+    "zszj90qp6doqjwxs8iek7rd": "Meta",
+    "m89hehsy9w8xyn9hpqmdg5q": "Selectors",
+    "i5l2r0q2atkwvz9sulh1b9p": "Child Selector",
+    "vbsq8e60bdgg77rugzuja7v": "Class",
+    "zqrvq5yvn8ljl5j54ev5vwc": "Element",
+    "t0d3zvjj1iral5yg7ejib70": "Id",
+    "v1yysv6g3tgwj8wi4br306s": "Pseudo-Selectors",
+    "n028g6venbk8vp13eh6suxy": "Same Styles for Multiple Elements",
+    "zhbazdmkw7qeyu38ft2dlwc": "Ways of Adding CSS",
+    "2imke6cnaczoc7zaukrpubq": "External CSS",
+    "soi7bzkqf26l2qtr6gzd16k": "Inline",
+    "6sjlqv1h6lomfeev5hrg0of": "Internal Styles",
+    "z7q1pf4gazwy6tteug48r42": "Writing Mode",
+    "iu6tt24tpsu35amafwvi31t": "HTML",
+    "qn42qihu6s1ugtyr5qfm798": "Comments",
+    "lc1382sq68uahh54wabb7wa": "Element",
+    "edkpi04jds06tbs20xghhoj": "Attributes",
+    "fnp5i2cawct5ove7lnael47": "Block Elements",
+    "jr13tyfv4nnajdhzs47mz2d": "Block Vs Inline Elements",
+    "kklp5upt8fb4wpok5o3zatm": "Inline Elements",
+    "wguxzvv8rq4qacfa7n3udti": "Inline Block Elements",
+    "43x0c3xsej744ligffe7c4s": "Semantic",
+    "k018eteb5m8dfkdlgdevrlg": "Bold Text",
+    "qkqyuwhrms4e7biyvoopad8": "Italics Text",
+    "sdl7hk5kv9dur1duvnsv8um": "Structure",
+    "r8n4fu2s7z6pl6v3ttxgt52": "Tags",
+    "84rcqqyci15oj54k137yqpm": "Anchor Tag",
+    "k3gr4an110a0071iu4ddj3f": "Figure",
+    "k3ynixhd60kjku708t0fuq7": "Forms",
+    "ny3ecpid6jgcv3846jx1o20": "Checkbox",
+    "a4otxf4bvospt0ychwk6rip": "Fieldset and Legend",
+    "rz0jgrv50x5xeziioucixeo": "Radio",
+    "6tx198lvb5hpe28txo08qg7": "Headers",
+    "lzwxnejkg7ym2nblayzcaq0": "Image Tags",
+    "2mnn9f2fmyel2akwy76b773": "Table",
+    "bhtielpw9zq24pa57vmirxc": "Types",
+    "78qlsgbgsvaze8m3xoeqslw": "Normal",
+    "vicbzfnfkfov3fbvkyq39gv": "Self Closing",
+    "cqh8n0tge21gvfce8cvrqr9": "Video",
+    "dnpex7b1vutmz23ws18q6zg": "Youtube Videos",
+    "odsgtatgagtsqs33ntb64tb": "Why Tags?",
+    "dkoc8wdzwpdrq4dujm79ye0": "JavaScript",
+    "q0ahg7jb3pi7xzq422kfwdq": "CSSStyleDeclaration",
+    "x99rfcvy6ln1ffnmgar6zu1": "DOM",
+    "18d264ditjt7fmerntuu8uz": "DOM Node Creation",
+    "yvkixgpv7wwfoj9nc4vb9l5": "JavaScript Frameworks",
+    "2w3vezbxck34yw7192ds1rj": "React",
+    "zsb7uvtdhhp0qv09tx729bk": "Components",
+    "4h57qzdo5dd9itcgyf4uhf6": "Default Props",
+    "qmvybeiw6kaunb6ftpcqek2": "PropTypes",
+    "anvogtpsax0d5xrvennzd66": "TS",
+    "dh2xq6p4hkqp78lsgjy063g": "React Fragments",
+    "6v026gbdppe969wfl6sdung": "Spreading Props",
+    "ibiacb6dvi6aql7khvq4gf7": "TS",
+    "yhln9thjysitk3cyoz6n768": "Types",
+    "lbslp65h4x4huierwe189df": "Class",
+    "lyom2gsb005pp3npnbmihdn": "Functional",
+    "ty71oyejbn2n8ztl8vge6lh": "Hooks",
+    "3k27flt9m26npha8lacy7h9": "useRef",
+    "57l61wm9j2oo7x4td5mce1i": "TS",
+    "1k8uzahupveafng9uxud2kf": "useState",
+    "lneeutybpcnj8rcws9xzqx5": "TS",
+    "ilshzkw5y8bk0we16n1u30s": "Why Hooks",
+    "wwawi46jxmjji4vjvxmxbq0": "JavaScript",
+    "wn6a6fi5b26y3c1vy9tsmn2": "Lifecycle",
+    "njw1l4r18jwxpm5evcceyha": "Logic Reuse",
+    "5efqj1npo95dbvem931o5ak": "TS",
+    "jiiyjbgd40wa0v2pv0ehg3e": "createElement",
+    "u9dnc27kcaf790r0t9cixsr": "Children",
+    "nxn21ponu819x8lsooso64d": "createElement vs Returning Elements",
+    "mu57b0dfi531wozdmnrywc4": "Events",
+    "xdlxc3s2el6rpdtvyugc1vc": "TS",
+    "g6uzka8l1u1ifsddevfrmj9": "Forms",
+    "vmbahsqliluhbkbrni71tco": "JSX",
+    "yujc732og4lmlnynziayvm5": "Compiling JSX",
+    "tacp2xll9h8a4lhwnbd54mt": "Rendering Arrays",
+    "7jyr7um0hlh1yvmsxlm2qyd": "State Management",
+    "9qw8n9xxlyjzjwtl4t3nmoh": "Tools",
+    "8co83flzdjcijmu4u26giwn": "React Query",
+    "wa73jg5qer18f8p3fihaty1": "APIs",
+    "09imt816l4bcxsdqga3jggl": "useMutation",
+    "42tev1rumbuxcq6hnssdwaq": "useQueries",
+    "ww7p3t6ym4hxbwe18wa4s8r": "useQuery",
+    "iyolqttxxao1zjmdhwnov8l": "Custom Hook",
+    "qrv35f2jdzohdf9pvbg7lzr": "Query Function",
+    "cga1j71wd3t37zm7svs84rg": "Arguments",
+    "x9oyvrcqbt8qs8rjbd8ra0t": "Query Keys",
+    "a4giff4ll5fjz456rcnp7l1": "Usage",
+    "whlqanpcrioshun6xef07cq": "Mutations",
+    "zwjoqd2nigv77nvy1y6yxla": "Queries",
+    "itkavndwlxhyrnsr140qmk8": "QueryClient",
+    "wf5526w1ivd2waatlynruuo": "QueryClientProvider",
+    "e8m9ox1ixcc2hu8sren4lj4": "Why React Query",
+    "6k127s80s2qpdc1ezzlpim3": "Redux",
+    "opnbpisqiqf8svo85clqm21": "Actions",
+    "7k8x883966bfuli268a7t9w": "Dispatch",
+    "ljqo4a8ra6xi9ln3tk3d6ks": "Reducer",
+    "que65pf599hvms64bm46dw5": "Store",
+    "6lyjwtn45ii5e4cpkmqfkrp": "Types of Application State",
+    "zp3wf6ep0tl5u2qkfqocsrk": "Client State",
+    "u0l1tk4o1kysx28cxpdr2vp": "Design",
+    "kwor9uu68paz3kuy4rd5hzr": "Colocating the State",
+    "3k3jut4tw2brwahs3j28qqz": "Composition",
+    "qp0uwf7dogj9emc6zjq0mh5": "Global State",
+    "r8ngopnb8lhaywyiylmo4ni": "Local State",
+    "jhi4jwkh04kwzd3bp25wofh": "Performance",
+    "1ipohwlx1rg886x4j5hoqdk": "Prop Drilling",
+    "f62c8t9mtxjgr7lqbdayfjg": "Server State",
+    "q808prgzppytbzif5pc6t47": "Properties",
+    "fo7ae2wgrgcipwtbhfqag8b": "Requirements",
+    "92719d8kme1u53fyqick2sl": "Styling",
+    "gu0abi5qx2jjed89otksyrn": "className",
+    "5b4hlv21n6usjq6hcwsdx1a": "Inline Styles",
+    "c9714lxe1h88mieqx1sje9r": "Test",
+    "nby9ee8373c3yb9ugy04vjy": "Tools",
+    "oq3rav3t80a0b8py80pwfsv": "React Testing Library",
+    "c7pxtfwojkk40aky9h5b55o": "Async Tests",
+    "8vel51jqushz1dd02xjix2d": "Element Interaction",
+    "qwfv2kevv4oxjas3rf2ml7d": "Finding Elements",
+    "c94usudbgkp1rmdytku1jox": "Elements with Router",
+    "juasj6stzaklgy589ka513r": "Find",
+    "mp77zy4z20zkh9ysbypn82m": "findBy vs getBy vs queryBy",
+    "duwl0sgnkwobbw1gxf6c1sd": "Get",
+    "zwv8tszsjunz4bevigdgfu0": "Query",
+    "njqnlyx7pvokswk3w8c3374": "Guiding Principle",
+    "w3chi15w3omejalroqwo5nd": "Priority",
+    "3pi3qz274245jofrv1etzan": "Integration Tests",
+    "3m33su0agj9nqvkvlixifit": "Mock",
+    "rs29yr4gxcs5me0di2ua4rk": "Rendering Elements on Virtual DOM",
+    "zy5dnn1on96dmwfbcrrdyz2": "Setup and Teardown",
+    "o20qql1or46fl9dj9lnz125": "Test Structure",
+    "9p8i1rgwvaj46dwakz2udma": "Assertions",
+    "vyrivvmu5hdizdvy7aokqkt": "Describe",
+    "lgzuu1v650d1fy80ycj9ljr": "Test Block",
+    "um7ih4wttlrb1whn9r6y9lc": "Tools",
+    "pjz13wxbsjhbnhysy1tek7r": "Create React App",
+    "fq7qt9qaeibh6qbsxjly6f6": "Formik",
+    "c228dgasmlogs6zw10atldv": "Why Use React?",
+    "fufxlumc2nu8oj9oniuqmys": "Composition",
+    "xoci9y3gsv4k4z7hjvss9r7": "Unidirectional Data Flow",
+    "kj5tp39bi66yq8qoscvgrhn": "Network Requests",
+    "hpwcw5x27k3f1kupdy5l3xb": "Why Is It Asynchronous?",
+    "psf2vkxylfc5wr235zux5s6": "Testing",
+    "nl8f4uggv1dimc8pdwf4v99": "Tools",
+    "sfxt5rdl2skv7tliqiu940r": "Jest",
+    "36snyhlwj9jio14ov6w78o0": "Assertion",
+    "7jgurh48dzmf8h9zbjz994n": "Async",
+    "1d16djtvx8zlc3sqdogkgvy": "Matchers",
+    "c3u1v2dkiu2q903gjcmkzdx": "Arrays",
+    "ia33lk6d6u0w0shv2lie0ws": "Exceptions",
+    "ftf96tbq5322h8kib5n1axh": "Null",
+    "kdqqdynqv86oayez33kj8o6": "Numbers",
+    "2433w4lqrwgy3qfxjan0n49": "Strings",
+    "4uwua6kpq9c0m3f1hshs6pz": "toBe Vs toEqual",
+    "1cglep39k6tnwpy8hh2s2k3": "Truthy or Falsy",
+    "zh5yqa8xr4j15nhn6fexoun": "Undefined",
+    "z0ae7c1abnjmeubv5gts1f8": "Multiple Expects",
+    "mf2yqvgrjgx6j7zr03ocgkf": "not",
+    "w0ywzhyy6l2f9gds30a0bi4": "Mock",
+    "4lz8g2g6opi2fe0vh2abo3c": "Mock Function",
+    "y3nl3w8z650e2my87odsrk8": ".mock Property",
+    "zvx7jl1s27r5xpjdg0040ek": "Return Value",
+    "ewf0v9091uh6yb3pp8khc57": "Spy",
+    "smhiz8dmmsukpv64i8g08ok": "Setup and Teardown",
+    "02bn2ed7m9s5ji3zx18tlz4": "afterAll",
+    "8rr69285bf9q7o0szl7m2sv": "afterEach",
+    "f802ru4izz3ssn48pz0682d": "beforeAll",
+    "6zsekruzh3wf8r380ledwjk": "beforeEach",
+    "qkd2oje8qgwtwpzrbg7p8uz": "Specific setup and teardown for each block",
+    "ss0bqxezqxyh9939zygzxem": "Test Block",
+    "5iuj4jm3wz7rfrl1zrk19l7": "it",
+    "2dc0inu1xjidq9yh89kg5a9": "only",
+    "it1gy5g3a73s74fq8uayxjk": "Test Suite",
+    "3hesvvjqy4tf54sy77mpbgv": "Types",
+    "lomrf3lshqo7cpcn5ggbwa5": "End to End Tests",
+    "tcy6dttkt4xgsxi8ism0l4u": "Integration Tests",
+    "rie0sz22web8picb1r075or": "Unit Tests",
+    "ij4srl7m5ne1x1oitkrdpak": "Tools",
+    "ccvdifllg8uo1taqdfu6loy": "Axios",
+    "wxslcdg78drjp87h8lcwu91": "Axios Promises",
+    "eylaprgwjf5dnyytby87tkh": "Custom Instance",
+    "4btehl6exzmof01o1c7n29g": "Error Handling",
+    "w2p8nafbyedoun338oc4vlq": "Global Config",
+    "jti0mu56sw4q208qn74jaa2": "Headers",
+    "xd5xjfp33z0cr3xka8c7rj9": "Methods",
+    "7v8pf5c7rj2hmt2ctcg1ugc": "Default",
+    "xt4wt9sz1ovae9zba0q0b7w": "Request Config",
+    "oczq49as0hqvmuvnk8md6dy": "GET",
+    "0dyb1w8loomr1bk2dvqnmpm": "POST",
+    "byrhx132lt2zk3qgzltw8x6": "Multiple Requests",
+    "z9jwwkgwybkcatdnovd97b8": "Why Axios",
+    "fgwh0h3l783kxqdcnpopky8": "Advantages",
+    "0w7fldgq414gxnl05fmpapo": "Babel",
+    "ssjc90e0xqnna6kdnzcj18j": "npm",
+    "sdp499ds7w20unr7ygdwloz": "TypeScript",
+    "kjkp02r9b64p2ior2q9axjn": "Alias",
+    "oju1706tjods4vc8vkjdxxk": "Difference between Types and Interfaces",
+    "3t38r0u6ifzvaggncs6daoc": "Types",
+    "e118qg9lbkwjsp7cnqsl8bj": "Basic Types",
+    "49th9ka2xjqjl61bvr23mlc": "Functions",
+    "xlu52erornkgek7w497mweg": "Objects",
+    "moclflptspqmdjzdo2mo3x5": "Daily",
+    "v8fcxgyc7dpe0diktmspl4w": "Journal",
+    "007jk3q9yqgny2f1zkefc16": "2022",
+    "j4mdu8b5nm5l23fi44q8ux2": "08",
+    "esczak7naq5gqfyaeth2yvc": "2022-08-29",
+    "wvvka5dtr8y49ssrhz0ja7d": "Dendron",
+    "eq4fh39joaxrp8y8qahv8q1": "Templates",
+    "s51zj6h457wnbv0rccr9td7": "Meeting Notes Template",
+    "edvmfpgf6qt5795zowm7pfn": "Zettel",
+    "djmknwf8xylsk3bwbyzgqwa": "Design",
+    "ygf9ydcqcmf3bdi4wyk3x58": "Learning",
+    "20sic8mjhyy6t01dyf3hwrk": "Procrastination",
+    "w6z7bafs5n9f3jxl0gl2oi7": "Quick Tips",
+    "gtitiv6sjmb5wtah2qi8ciy": "Remembering Phase",
+    "npym9umblowt368a03x77yr": "Spacing",
+    "d5bojyqly441kgfaff3tege": "Second Brain",
+    "n16ja9hh2pv2fofjelywzt1": "Fundamentals",
+    "js3o83xdh8dtbqkobqr11os": "Borrowed Creativity",
+    "42al2df93204ly1iw6h8yv2": "Capture Habit",
+    "p9cpcx1yu5597pf3hai2fqd": "Idea Recycling",
+    "n41z5rcdt8t50h1xj394g91": "Projects over Categories",
+    "d6gqqoli9vu2s8jwot7ahki": "Time Management",
+    "c2oofjntm6ma3fkm0beqfjt": "Urgency Trapping",
+    "9dyahjfz9jud8v9nj1hyl7j": "Time Vs Task Management",
+    "v3kk3u64rdtw00jprkpgn0o": "Understanding Phase",
+    "yvyg4sc6wu8upz1h3x155lu": "Deepen Comprehension",
+    "1a3u40r3rijwbm8fxxc3sfr": "Mix It Up",
+    "dp51cb8fpmnmolb8uayq4yj": "Structuring Connections",
+    "omuf127ul29qp4ebuvejtep": "Meet",
+    "3z46nekldso610hsnqxvnkx": "2022",
+    "7uua4320xmookf5nj0nr3x6": "07",
+    "ox3zjzf9rmoafy3ntz9ti6j": "Service Fabric Session",
+    "2m3ygofcj8yajjevvh51ask": "Notes",
+    "ntdn6khcjk5sk1bns1hb2v2": "Angular",
+    "69patgqmpudgcuc7cyli9sk": "Internet Fundamentals",
+    "72h5htbgffig8fk3uhz5ygh": "Linux",
+    "q7wq3o6pqbfbutxxme5gizo": "The Web's Next Transformation",
+    "gznyhq8q8kc5ywe8y1lrxyn": "Procrastination",
+    "6xavblr20jscvn5gy0qw8ue": "Procreate",
+    "ez961kgi4njrx0cme414md1": "Redux",
+    "8pxj3vsxxi38suycj9b9stb": "Vi",
+    "xd4hijfe97z9cw9otkhfz8u": "Webdev",
+    "b9usa34mum3s56s60buxilt": "Tags",
+    "cj1hvhhy6vcn6vgyot7k853": "Important",
+    "ouk0pw0z0byvj6fd8hvkize": "Todo",
+    "w02tp3doq9khvg9wa6vcauj": "TS",
+    "witebak8d2ks87mmo9ofhui": "Templates",
+    "igyd5ku40qz0wt5mlyx8yfx": "Daily Journal Template",
+    "mksfjcj8faeo99jygm2nbir": "Literature",
+    "ndwog24qg0hzfj0xxkbcsuo": "Meeting Notes Template"
+  }
+}

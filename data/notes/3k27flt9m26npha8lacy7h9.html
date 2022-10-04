@@ -1,0 +1,27 @@
+<h1 id="useref">useRef<a aria-hidden="true" class="anchor-heading icon-link" href="#useref"></a></h1>
+<p>This is how you use a <code>useRef</code> hook:</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">TextInputWithFocusButton</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> inputEl <span class="token operator">=</span> <span class="token function">useRef</span><span class="token punctuation">(</span><span class="token keyword null nil">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">onButtonClick</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+    <span class="token comment">// `current` points to the mounted text input element</span>
+    inputEl<span class="token punctuation">.</span><span class="token property-access">current</span><span class="token punctuation">.</span><span class="token method function property-access">focus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>input</span> <span class="token attr-name">ref</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>inputEl<span class="token punctuation">}</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>onButtonClick<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">Focus the input</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span></span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>useRef</code> returns a mutable <code>ref</code> object whose <code>.current</code> property is initialized to the passed argument (<code>initialValue</code>). The returned object will persist for the full lifetime of the component. It gets pesisted across multiple renders of the component.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/57l61wm9j2oo7x4td5mce1i">TS</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Personal-Knowledge-Vault/notes/g6uzka8l1u1ifsddevfrmj9">Forms</a></li>
+</ul>

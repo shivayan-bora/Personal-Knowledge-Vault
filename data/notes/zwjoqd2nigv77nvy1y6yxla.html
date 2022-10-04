@@ -1,0 +1,28 @@
+<h1 id="queries">Queries<a aria-hidden="true" class="anchor-heading icon-link" href="#queries"></a></h1>
+<p>A query is a declarative dependency to some asynchronous source of data that's tied to a unique key. Basically, it's what React Query uses to fetch data from a server with any Promise based method (inclusing GET or POST Methods).</p>
+<p>What makes React Query really powerful, is it's ability to create and maintain a cache for each one of it's queries. To accomplish this, React Query uses two things:</p>
+<ol>
+<li>QueryClient</li>
+<li>QueryClientProvider</li>
+</ol>
+<p>Firstly, we need to create a QueryClient and wrap our entire application with a QueryClientProvider which makes the QueryClient cache available to the entire application.</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">ReactDOM</span></span> <span class="token keyword module">from</span> <span class="token string">'react-dom'</span>
+<span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">App</span></span> <span class="token keyword module">from</span> <span class="token string">'./App'</span> 
+<span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span> <span class="token maybe-class-name">QueryClient</span><span class="token punctuation">,</span> <span class="token maybe-class-name">QueryClientProvider</span> <span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'react-query'</span>
+
+<span class="token keyword">const</span> queryClient <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">QueryClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+
+<span class="token maybe-class-name">ReactDOM</span><span class="token punctuation">.</span><span class="token method function property-access">render</span><span class="token punctuation">(</span> 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span><span class="token class-name">QueryClientProvider</span></span> <span class="token attr-name">client</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>queryClient<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text"> 
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span><span class="token class-name">App</span></span> <span class="token punctuation">/></span></span><span class="token plain-text"> 
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span><span class="token class-name">QueryClientProvider</span></span><span class="token punctuation">></span></span>
+    <span class="token punctuation">,</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Next up, we need to use the <a href="/Personal-Knowledge-Vault/notes/ww7p3t6ym4hxbwe18wa4s8r">useQuery</a> hook to create new queries.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/itkavndwlxhyrnsr140qmk8">QueryClient</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/wf5526w1ivd2waatlynruuo">QueryClientProvider</a></li>
+</ol>

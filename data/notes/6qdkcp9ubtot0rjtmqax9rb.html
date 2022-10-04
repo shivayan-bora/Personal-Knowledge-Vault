@@ -1,0 +1,14 @@
+<h1 id="how">How<a aria-hidden="true" class="anchor-heading icon-link" href="#how"></a></h1>
+<p>To do this in Spring:</p>
+<pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComplexBusinessService</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token class-name">SortAlgorithm</span> sortAlgorithm<span class="token punctuation">;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+
+<span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BubbleSortAlgorithm</span> <span class="token keyword">implements</span> <span class="token class-name">SortAlgorithm</span> <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+</code></pre>
+<p><a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">@Component (Private)</a>: Tells the spring framework that you need to manage instances of the annotated class.</p>
+<p><a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">@Autowired (Private)</a>: Tells the spring to start looking for the annotated dependency among the component it manages.</p>

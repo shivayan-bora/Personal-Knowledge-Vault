@@ -1,0 +1,8 @@
+<h1 id="findby-vs-getby-vs-queryby">findBy vs getBy vs queryBy<a aria-hidden="true" class="anchor-heading icon-link" href="#findby-vs-getby-vs-queryby"></a></h1>
+<p><img src="/Personal-Knowledge-Vault/assets/images/2022-07-26-10-24-14.png" alt="Differences"></p>
+<ul>
+<li><code>findBy</code>, <code>getBy</code>, <code>queryBy</code> are used to fetch only one element but <code>findAllBy</code>, <code>getAllBy</code>, <code>queryAllBy</code> return an array of elements.</li>
+<li><code>getBy</code> and <code>getAllBy</code> will throw an error if no match is found and they can't be used asynchronously.</li>
+<li><code>findBy</code> and <code>findAllBy</code> is similar to it's <code>get</code> counterpart, however, it can be used asynchronously. What that means is, if we have an element that renders whenever there's a successful API call, we need to use <code>find</code>.</li>
+<li><code>queryBy</code> and <code>queryAllBy</code> is similar to it's <code>get</code> counterpart with the only difference that, when we don't get a match, we don't get an error.</li>
+</ul>

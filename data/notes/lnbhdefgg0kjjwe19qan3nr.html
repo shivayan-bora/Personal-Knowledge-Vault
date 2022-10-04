@@ -1,0 +1,18 @@
+<h1 id="auto-wiring">Auto Wiring<a aria-hidden="true" class="anchor-heading icon-link" href="#auto-wiring"></a></h1>
+<p>The process where Spring framework identifies the dependencies, and populates them. e.g.</p>
+<pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComplexBusinessService</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token class-name">SortAlgorithm</span> sortAlgorithm<span class="token punctuation">;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+
+<span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BubbleSortAlgorithm</span> <span class="token keyword">implements</span> <span class="token class-name">SortAlgorithm</span> <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+</code></pre>
+<p><a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">@Autowired (Private)</a> tells Spring that <code>SortAlgorithm</code> is a dependency for the <code>ComplexBusinessService</code>.</p>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Personal-Knowledge-Vault/notes/cq35cx192wdodxpcir6rtn8">AutoWired</a></li>
+</ul>

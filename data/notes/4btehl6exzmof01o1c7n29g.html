@@ -1,0 +1,11 @@
+<h1 id="error-handling">Error Handling<a aria-hidden="true" class="anchor-heading icon-link" href="#error-handling"></a></h1>
+<p>In contrast to <code>fetch</code> and <code>XMLHttpRequest</code>, Axios treats all errors as errors and not just network errors.</p>
+<p>Since Axios is a promise based HTTP client, it has a <code>catch</code> method which is called when the promise is rejected.</p>
+<pre class="language-js"><code class="language-js">axios<span class="token punctuation">.</span><span class="token method function property-access">get</span><span class="token punctuation">(</span><span class="token string">'https://api.github.com/users/michaelficarra'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token method function property-access">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token keyword control-flow">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>

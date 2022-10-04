@@ -1,0 +1,64 @@
+<h1 id="async-tests">Async Tests<a aria-hidden="true" class="anchor-heading icon-link" href="#async-tests"></a></h1>
+<p><img src="/Personal-Knowledge-Vault/assets/images/2022-07-28-09-58-57.png" alt="Problem with async requests in tests"></p>
+<p>To test async operations, we face the following problems:</p>
+<ol>
+<li>Requests cost money either to us or the provider of the API.</li>
+<li>Requests can be slow depending on the API.</li>
+<li>Our tests are dependent on something that's external.</li>
+</ol>
+<p>To fix this, we can mock our API requests so that we are not dependent on an external source.</p>
+<p>For mocking, we do the following.</p>
+<ol>
+<li>In this example, we would be mocking axios. Firstly, we need to create a folder called <code>__mocks__</code>.</li>
+<li>Then we create a file called axios.js. <strong>Please note that the name of the file and the folder is very important.</strong></li>
+</ol>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> mockResponse <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">results</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token literal-property property">first</span><span class="token operator">:</span> <span class="token string">"Laith"</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">last</span><span class="token operator">:</span> <span class="token string">"Harb"</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">picture</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token literal-property property">large</span><span class="token operator">:</span> <span class="token string">"https://randomuser.me/api/portraits/men/59.jpg"</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">login</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">"ThePhonyGOAT"</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">get</span><span class="token operator">:</span> jest<span class="token punctuation">.</span><span class="token method function property-access">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">mockResolvedValue</span><span class="token punctuation">(</span>mockResponse<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>jest.fn()</code> is used to create mock functions.</p>
+<p>For capturing elements dependent on an async API call, we need to use <code>findBy</code> as follows:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function"><span class="token maybe-class-name">MockFollowersList</span></span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&#x3C;</span><span class="token maybe-class-name">BrowserRouter</span><span class="token operator">></span>
+            <span class="token operator">&#x3C;</span><span class="token maybe-class-name">FollowersList</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token maybe-class-name">BrowserRouter</span><span class="token operator">></span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'FollowersList'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should render the followers list card'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&#x3C;</span><span class="token maybe-class-name">MockFollowersList</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> followerDivElement <span class="token operator">=</span> <span class="token keyword control-flow">await</span> screen<span class="token punctuation">.</span><span class="token method function property-access">findByTestId</span><span class="token punctuation">(</span><span class="token string">'follower-item-0'</span><span class="token punctuation">)</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>followerDivElement<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toBeInTheDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Still here it won't work as React Scripts reset our mocks on every render. To make sure this doesn't happen, there's a way to test:</p>
+<ol>
+<li>Go to the path: <code>node_modules/react-scripts/scripts/utils/createJestConfig.js</code>.</li>
+<li>Search for the <code>resetMocks</code> which would be set to <code>true</code>. It's usually in a <code>config</code> object and on line 69.</li>
+<li>Set it's value to <code>false</code> and restart your test runner.</li>
+</ol>
+<p>Although this method isn't recommended and we need to find an alternative or check if it's fixed. <a class="color-tag" style="--tag-color: #9e0168;" href="/Personal-Knowledge-Vault/notes/ouk0pw0z0byvj6fd8hvkize">#todo</a></p>

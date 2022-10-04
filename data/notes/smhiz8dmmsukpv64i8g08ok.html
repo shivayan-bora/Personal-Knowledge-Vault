@@ -1,0 +1,36 @@
+<h1 id="setup-and-teardown">Setup and Teardown<a aria-hidden="true" class="anchor-heading icon-link" href="#setup-and-teardown"></a></h1>
+<p>Consider the following test cases:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> animals <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'elephant'</span><span class="token punctuation">,</span> <span class="token string">'lion'</span><span class="token punctuation">,</span> <span class="token string">'tiger'</span><span class="token punctuation">,</span> <span class="token string">'bear'</span><span class="token punctuation">,</span> <span class="token string">'zebra'</span><span class="token punctuation">,</span> <span class="token string">'giraffe'</span><span class="token punctuation">,</span> <span class="token string">'panda'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'animals array'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should add animal to the end of the array'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        animals<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span><span class="token string">'penguin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>animals<span class="token punctuation">[</span>animals<span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toBe</span><span class="token punctuation">(</span><span class="token string">'penguin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should add animal to the beginning of the array'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        animals<span class="token punctuation">.</span><span class="token method function property-access">unshift</span><span class="token punctuation">(</span><span class="token string">'monkey'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>animals<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toBe</span><span class="token punctuation">(</span><span class="token string">'monkey'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should have initial length of 7'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toBe</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>The 3rd test case would fail as the tests before that are modifying the <code>animals</code> array. To avoid this, we need to reinitialize the array back to it's original state. However, we shouldn't reinitialize the array in each one of the methods as we're repeating code.</p>
+<p>Hence we use setup (<code>beforeAll</code>, <code>beforeEach</code> etc.) or teardown (<code>afterAll</code>, <code>afterEach</code> etc.) methods to resolve this.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/qkd2oje8qgwtwpzrbg7p8uz">Specific setup and teardown for each block</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/02bn2ed7m9s5ji3zx18tlz4">afterAll</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/8rr69285bf9q7o0szl7m2sv">afterEach</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/f802ru4izz3ssn48pz0682d">beforeAll</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/6zsekruzh3wf8r380ledwjk">beforeEach</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Personal-Knowledge-Vault/notes/zy5dnn1on96dmwfbcrrdyz2">Setup and Teardown</a></li>
+</ul>

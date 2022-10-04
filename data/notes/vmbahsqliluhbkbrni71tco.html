@@ -1,0 +1,17 @@
+<h1 id="jsx">JSX<a aria-hidden="true" class="anchor-heading icon-link" href="#jsx"></a></h1>
+<p>In order to create a UI with JSX:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+        <span class="token keyword">const</span> rootElement <span class="token operator">=</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> element <span class="token operator">=</span> <span class="token operator">&#x3C;</span>div className<span class="token operator">=</span><span class="token string">"container"</span><span class="token operator">></span><span class="token maybe-class-name">Hello</span> <span class="token maybe-class-name">World</span><span class="token operator">&#x3C;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token maybe-class-name">ReactDOM</span><span class="token punctuation">.</span><span class="token method function property-access">render</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> rootElement<span class="token punctuation">)</span> <span class="token comment">// As per React 18, this is not the way to attach the app to the root element</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>body</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>Unfortunately, this syntax i.e. <code>&#x3C;div>&#x3C;/div></code> is not understood by the browser natively inside a script tag. This syntax is called JSX.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/yujc732og4lmlnynziayvm5">Compiling JSX</a></li>
+</ol>

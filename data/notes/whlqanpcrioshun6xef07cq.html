@@ -1,0 +1,32 @@
+<h1 id="mutations">Mutations<a aria-hidden="true" class="anchor-heading icon-link" href="#mutations"></a></h1>
+<p>Unlike queries, mutations are used to perform CRUD operations on data or perform server side-effects. For this, we can use a <a href="/Personal-Knowledge-Vault/notes/09imt816l4bcxsdqga3jggl">useMutation</a> hook.</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">App</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">const</span> mutation <span class="token operator">=</span> <span class="token function">useMutation</span><span class="token punctuation">(</span><span class="token parameter">newTodo</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+     <span class="token keyword control-flow">return</span> axios<span class="token punctuation">.</span><span class="token method function property-access">post</span><span class="token punctuation">(</span><span class="token string">'/todos'</span><span class="token punctuation">,</span> newTodo<span class="token punctuation">)</span>
+   <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+   <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
+     <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+       </span><span class="token punctuation">{</span>mutation<span class="token punctuation">.</span><span class="token property-access">isLoading</span> <span class="token operator">?</span> <span class="token punctuation">(</span>
+         <span class="token string">'Adding todo...'</span>
+       <span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token punctuation">(</span>
+         <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+           </span><span class="token punctuation">{</span>mutation<span class="token punctuation">.</span><span class="token property-access">isError</span> <span class="token operator">?</span> <span class="token punctuation">(</span>
+             <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">An error occurred: </span><span class="token punctuation">{</span>mutation<span class="token punctuation">.</span><span class="token property-access">error</span><span class="token punctuation">.</span><span class="token property-access">message</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+           <span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token keyword null nil">null</span><span class="token punctuation">}</span><span class="token plain-text">
+
+           </span><span class="token punctuation">{</span>mutation<span class="token punctuation">.</span><span class="token property-access">isSuccess</span> <span class="token operator">?</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">Todo added!</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span> <span class="token operator">:</span> <span class="token keyword null nil">null</span><span class="token punctuation">}</span><span class="token plain-text">
+ 
+           </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>button</span>
+             <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+               mutation<span class="token punctuation">.</span><span class="token method function property-access">mutate</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'Do Laundry'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+             <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+           <span class="token punctuation">></span></span><span class="token plain-text">
+             Create Todo
+           </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">
+         </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span></span><span class="token punctuation">></span></span>
+       <span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
+     </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+   <span class="token punctuation">)</span>
+ <span class="token punctuation">}</span>
+</code></pre>

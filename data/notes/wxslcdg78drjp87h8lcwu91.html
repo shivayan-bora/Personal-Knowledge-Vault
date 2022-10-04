@@ -1,0 +1,22 @@
+<h1 id="axios-promises">Axios Promises<a aria-hidden="true" class="anchor-heading icon-link" href="#axios-promises"></a></h1>
+<p>Once an HTTP request is made, it returns a promise that's either fulfilled or rejected as per the response sent by the server.
+If the promise is fulfilled, the first argument of <code>then()</code> will be called; if the promise is rejected, the second argument will be called.
+According to the documentation, the fulfillment value is an object containing the following information:</p>
+<pre class="language-json"><code class="language-json">    <span class="token punctuation">{</span> 
+        <span class="token comment">// `data` is the response that was provided by the server </span>
+        data<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> 
+        <span class="token comment">// `status` is the HTTP status code from the server response </span>
+        status<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span> 
+        <span class="token comment">// `statusText` is the HTTP status message from the server response </span>
+        statusText<span class="token operator">:</span> 'OK'<span class="token punctuation">,</span> 
+        <span class="token comment">// `headers` the headers that the server responded with </span>
+        <span class="token comment">// All header names are lower cased </span>
+        headers<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> 
+        <span class="token comment">// `config` is the config that was provided to `axios` for the request </span>
+        config<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> 
+        <span class="token comment">// `request` is the request that generated this response </span>
+        <span class="token comment">// It is the last ClientRequest instance in node.js (in redirects) </span>
+        <span class="token comment">// and an XMLHttpRequest instance the browser </span>
+        request<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> 
+    <span class="token punctuation">}</span>
+</code></pre>

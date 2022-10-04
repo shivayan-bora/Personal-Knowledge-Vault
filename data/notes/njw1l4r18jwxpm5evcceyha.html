@@ -1,0 +1,37 @@
+<h1 id="logic-reuse">Logic Reuse<a aria-hidden="true" class="anchor-heading icon-link" href="#logic-reuse"></a></h1>
+<p>Earlier we used to share logic via mixins. Then we used to share logic via Higher Order Components. Then we moved onto Render Props.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">React</span></span> <span class="token keyword module">from</span> <span class="token string">'react'</span>
+<span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">UserContext</span></span> <span class="token keyword module">from</span> <span class="token string">'../user-context'</span>
+
+<span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">ChatFeed</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>feedId<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&#x3C;</span><span class="token maybe-class-name">UserContext</span><span class="token punctuation">.</span><span class="token property-access"><span class="token maybe-class-name">Consumer</span></span><span class="token operator">></span>
+      <span class="token punctuation">{</span><span class="token parameter">user</span> <span class="token arrow operator">=></span> <span class="token punctuation">(</span>
+        <span class="token operator">&#x3C;</span><span class="token maybe-class-name">SubscribeToFeed</span> feedId<span class="token operator">=</span><span class="token punctuation">{</span>feedId<span class="token punctuation">}</span><span class="token operator">></span>
+          <span class="token punctuation">{</span><span class="token parameter">posts</span> <span class="token arrow operator">=></span> <span class="token punctuation">(</span>
+            <span class="token operator">&#x3C;</span><span class="token operator">></span>
+              <span class="token operator">&#x3C;</span><span class="token maybe-class-name">DocumentTitle</span> title<span class="token operator">=</span><span class="token punctuation">{</span>posts<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+              <span class="token comment">// Pyramid of Doom</span>
+              <span class="token comment">// Pseudo-Hierarchy</span>
+              <span class="token operator">&#x3C;</span><span class="token maybe-class-name">OnlineStatus</span><span class="token operator">></span>
+                <span class="token punctuation">{</span><span class="token parameter">isOnline</span> <span class="token arrow operator">=></span> <span class="token punctuation">(</span>
+                  <span class="token operator">&#x3C;</span><span class="token maybe-class-name">GeoLocation</span><span class="token operator">></span>
+                    <span class="token punctuation">{</span><span class="token parameter"><span class="token dom variable">location</span></span> <span class="token arrow operator">=></span> <span class="token punctuation">(</span>
+                      <span class="token operator">&#x3C;</span><span class="token operator">></span>
+                        <span class="token operator">&#x3C;</span><span class="token maybe-class-name">StickyScroller</span><span class="token operator">></span>
+                          <span class="token operator">&#x3C;</span><span class="token maybe-class-name">Posts</span> posts<span class="token operator">=</span><span class="token punctuation">{</span>posts<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+                        <span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token maybe-class-name">StickyScroller</span><span class="token operator">></span>
+                        <span class="token operator">&#x3C;</span><span class="token maybe-class-name">PostInput</span> feedId<span class="token operator">=</span><span class="token punctuation">{</span>feedId<span class="token punctuation">}</span> user<span class="token operator">=</span><span class="token punctuation">{</span>user<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+                      <span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token operator">></span>
+                    <span class="token punctuation">)</span><span class="token punctuation">}</span>
+                  <span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token maybe-class-name">GeoLocation</span><span class="token operator">></span>
+                <span class="token punctuation">)</span><span class="token punctuation">}</span>
+              <span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token maybe-class-name">OnlineStatus</span><span class="token operator">></span>
+            <span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token operator">></span>
+          <span class="token punctuation">)</span><span class="token punctuation">}</span>
+        <span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token maybe-class-name">SubscribeToFeed</span><span class="token operator">></span>
+      <span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token maybe-class-name">UserContext</span><span class="token punctuation">.</span><span class="token property-access"><span class="token maybe-class-name">Consumer</span></span><span class="token operator">></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>

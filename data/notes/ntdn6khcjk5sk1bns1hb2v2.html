@@ -1,0 +1,142 @@
+<h1 id="angular">Angular<a aria-hidden="true" class="anchor-heading icon-link" href="#angular"></a></h1>
+<h3 id="why-angular">Why Angular<a aria-hidden="true" class="anchor-heading icon-link" href="#why-angular"></a></h3>
+<ol>
+<li>
+<p>Angular follows common and familiar enterprise patterns and conventions. This means if you have a background in Java or dotnet, and you're familiar or comfortable with the class based approach, you'll feel right at home with Angular. This can be seen from the fact that Angular is built on TypeScript, which is a superset of JavaScript that adds static typing and class based object oriented programming to the language.</p>
+</li>
+<li>
+<p>Angular is a batteries included framework. This means that you don't have to worry about the plumbing. Angular takes care of the plumbing for you. This includes things like routing, state management, and data fetching. This means that you can focus on the business logic of your application and not worry about the plumbing. Unlike React which needs a routing library like React Router, state management library like Redux, and data fetching library like Apollo, Angular takes care of all of this for you.</p>
+</li>
+<li>
+<p>Ships with tooling to accelerate the developer workflow. Angular CLI and NX Dev Tool.</p>
+</li>
+<li>
+<p>Rich and Vibrant ecosystem.</p>
+</li>
+<li>
+<p>Proven track record.</p>
+</li>
+</ol>
+<p><img src="/Personal-Knowledge-Vault/2022-09-08-16-31-59.png" alt="AngularJS 1.x Big Picture"></p>
+<p><img src="/Personal-Knowledge-Vault/2022-09-08-16-32-51.png" alt="The Simpler Angular"></p>
+<h3 id="modules">Modules<a aria-hidden="true" class="anchor-heading icon-link" href="#modules"></a></h3>
+<p>Two flavours inside Angular:</p>
+<ul>
+<li>ES6 Modules:
+<ul>
+<li>Organization at a language level.</li>
+<li>Uses ES6 Module Syntax.</li>
+<li>Modules export things that other modules can import.</li>
+</ul>
+</li>
+</ul>
+<pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span> <span class="token maybe-class-name">Component</span><span class="token punctuation">,</span> <span class="token maybe-class-name">OnInit</span> <span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span> <span class="token maybe-class-name">ItemService</span><span class="token punctuation">,</span> <span class="token maybe-class-name">Item</span> <span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'../shared'</span><span class="token punctuation">;</span>
+
+@<span class="token function"><span class="token maybe-class-name">Component</span></span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">selector</span><span class="token operator">:</span> <span class="token string">'app-items'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">templateUrl</span><span class="token operator">:</span> <span class="token string">'./items.component.html'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">styleUrls</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'./items.component.css'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword module">export</span> <span class="token keyword">class</span> <span class="token class-name">ItemsComponent</span> <span class="token keyword">implements</span> <span class="token class-name">OnInit</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li><a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">@NgModule (Private)</a>:
+<ul>
+<li>Organization at a framework level.</li>
+<li>Tells Angular how to configure itself so that it knows what exists and how it needs to fit together.</li>
+<li><code>declarations</code> - Define view classes that are available to the module.</li>
+<li><code>imports</code> - Define a list of modules that the module needs.</li>
+<li><code>providers</code> - Define a list of services the module makes available.</li>
+<li><code>exports</code> - Define a list of modules the module makes available.</li>
+<li><code>bootstrap</code> - Define the component that should be bootstrapped.</li>
+</ul>
+</li>
+</ul>
+<pre class="language-js"><code class="language-js">@<span class="token function"><span class="token maybe-class-name">NgModule</span></span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token comment">// Here's the modules we're importing</span>
+    <span class="token literal-property property">imports</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token maybe-class-name">BrowserModule</span><span class="token punctuation">,</span> 
+        <span class="token maybe-class-name">AppRoutingModule</span><span class="token punctuation">,</span> 
+        <span class="token maybe-class-name">BrowserAnimationsModule</span><span class="token punctuation">,</span> 
+        <span class="token maybe-class-name">MaterialModule</span><span class="token punctuation">,</span> 
+        <span class="token maybe-class-name">HttpClientModule</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// Here's the components we're declaring</span>
+    <span class="token literal-property property">declarations</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token maybe-class-name">AppComponent</span><span class="token punctuation">,</span> <span class="token maybe-class-name">HomeComponent</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// Here's the providors that we want to consume</span>
+    <span class="token literal-property property">providers</span><span class="token operator">:</span> <span class="token punctuation">[</span> 
+        <span class="token maybe-class-name">AuthService</span><span class="token punctuation">,</span> 
+        <span class="token maybe-class-name">NotificationService</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// We're going to bootstrap on the AppComponent</span>
+    <span class="token literal-property property">bootstrap</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token maybe-class-name">AppComponent</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword module">export</span> <span class="token keyword">class</span> <span class="token class-name">AppModule</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
+<p>At the very highest level, when we're spinning this application up, hen we tell Angulat to go ahead and bootstrap the AppModule:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span> platformBrowserDynamic <span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'@angular/platform-browser-dynamic'</span><span class="token punctuation">;</span>
+<span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span> enableProdMode <span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span> environment <span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'./environments/environment'</span><span class="token punctuation">;</span>
+<span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span> <span class="token maybe-class-name">AppModule</span> <span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'./app'</span><span class="token punctuation">;</span>
+
+<span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>environment<span class="token punctuation">.</span><span class="token property-access">production</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">enableProdMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">platformBrowserDynamic</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">bootstrapModule</span><span class="token punctuation">(</span><span class="token maybe-class-name">AppModule</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Like React, Angular also consists of a tree shaped component hierarchy with the root module at the top which is the entry point (root <code>div</code> in React) and every other components as it's branches and leaves. This helps in promoting a unidirectional data flow from top to bottom (<code>props</code> in React). But then if there's an event, that can be propagated up the tree (Event Bubbling).</p>
+<h3 id="getting-started">Getting Started<a aria-hidden="true" class="anchor-heading icon-link" href="#getting-started"></a></h3>
+<p>Like Create React App, we have Angular CLI. Angular CLI enables us to use ng which is used for a lot of functionalities which will come later.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g @angular/cli
+</code></pre>
+<p>To create a new app:</p>
+<pre class="language-bash"><code class="language-bash">ng new my-first-project
+</code></pre>
+<h3 id="components">Components<a aria-hidden="true" class="anchor-heading icon-link" href="#components"></a></h3>
+<p>Like React, Angular also has a reusable component based structure for creating web apps.</p>
+<p>A component consists of three things:</p>
+<ol>
+<li>Component Class: Handles the data and functionality.</li>
+<li>HTML Template: Determines the structure of UI. (<code>app.component.html</code>)</li>
+<li>Component-specific styles: Defines the look and feel. (<code>app.component.css</code>)</li>
+</ol>
+<p>We can write global styles in <code>styles.css</code>.</p>
+<p>We use <code>class</code> to bind classes to the template.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>product<span class="token punctuation">"</span></span> <span class="token attr-name">[class.selected]</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>product.isSelected<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>In React we do the same by:</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">product </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>product<span class="token punctuation">.</span><span class="token property-access">isSelected</span> <span class="token operator">?</span> <span class="token string">'selected'</span> <span class="token operator">:</span> <span class="token string">''</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+</code></pre>
+<h3 id="state">State<a aria-hidden="true" class="anchor-heading icon-link" href="#state"></a></h3>
+<p>The state of a component is the data that it holds. In Angular, we can store the state of a component in a class property. We can then use this property in the template to display the data. It is stored in <code>app.component.ts</code>:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword module">export</span> <span class="token keyword">class</span> <span class="token class-name">AppComponent</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">newMemberName</span><span class="token operator">:</span> string <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token literal-property property">members</span><span class="token operator">:</span> string<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="event-handling">Event Handling<a aria-hidden="true" class="anchor-heading icon-link" href="#event-handling"></a></h3>
+<h3 id="directives">Directives<a aria-hidden="true" class="anchor-heading icon-link" href="#directives"></a></h3>
+<p>In angular, we have structural directives which are used to change the structure of the DOM. Structural directives are denoted by <code>*</code> in the template. For example, <code>*ngIf</code> is used to conditionally render a component.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">*ngIf</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>isUserLoggedIn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Welcome to the app<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>In React we do the same by:</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token punctuation">{</span>isUserLoggedIn <span class="token operator">&#x26;&#x26;</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">Welcome to the app</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">}</span>
+</code></pre>
+<p>Angular also has a similar syntax for conditional rendering.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">[hidden]</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>!isUserLoggedIn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Welcome to the app<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>For repeating a component, we use <code>*ngFor</code> in Angular.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">*ngFor</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>let product of products<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>We do the same in React by:</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token punctuation">{</span>products<span class="token punctuation">.</span><span class="token method function property-access">map</span><span class="token punctuation">(</span><span class="token parameter">product</span> <span class="token arrow operator">=></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">{</span>product<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+</code></pre>
+<p>Interpolation is used to bind data to the template. We use <code>{{}}</code> to do the same.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span><span class="token punctuation">></span></span>{{product}}<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>We do the same in React by:</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">{</span>product<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+</code></pre>
