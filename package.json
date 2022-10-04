@@ -1,0 +1,24 @@
+{
+  "name": "Personal-Knowledge-Vault",
+  "version": "1.0.0",
+  "description": "This repository contains my Zettelkasten notes on my Personal Knowledge",
+  "main": "index.js",
+  "dependencies": {
+    "@dendronhq/dendron-cli": "^0.114.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivayan-bora/Personal-Knowledge-Vault.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivayan-bora/Personal-Knowledge-Vault/issues"
+  },
+  "homepage": "https://github.com/shivayan-bora/Personal-Knowledge-Vault#readme"
+}
