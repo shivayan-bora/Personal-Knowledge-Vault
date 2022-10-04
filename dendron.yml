@@ -110,3 +110,5 @@ publishing:
         payload:
             - vault
     enableTaskNotes: true
+    siteUrl: https://shivayan-bora.github.io
+    assetsPrefix: /Personal-Knowledge-Vault

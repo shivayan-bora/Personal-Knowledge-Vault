@@ -2,7 +2,7 @@
 id: 8pxj3vsxxi38suycj9b9stb
 title: Vi
 desc: ''
-updated: 1663902373455
+updated: 1664877043614
 created: 1663835826192
 ---
 
@@ -21,7 +21,7 @@ You can move around the file using the arrow keys or the `hjkl` keys.
 Delete a character using `x`.
 
 Delete a line using `dd`.
-
+PP
 Copy a line using `yy`.
 
 Paste a line using `p`.
