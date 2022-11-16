@@ -1,8 +1,8 @@
 ---
 id: z4uzqpn3waj7vxkxwv3pohu
-title: Ioc Container
+title: IOC Container
 desc: ''
-updated: 1659282100898
+updated: 1668599235769
 created: 1659282043709
 ---
 
