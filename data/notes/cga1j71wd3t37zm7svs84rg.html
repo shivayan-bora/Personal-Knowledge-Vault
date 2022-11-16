@@ -1,0 +1,84 @@
+<h1 id="arguments">Arguments<a aria-hidden="true" class="anchor-heading icon-link" href="#arguments"></a></h1>
+<p>We can pass arguments into a Query Function in two ways:
+1.By using an Arrow function:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> userQuery <span class="token operator">=</span> <span class="token function">useQuery</span><span class="token punctuation">(</span>
+  <span class="token punctuation">[</span><span class="token string">"user"</span><span class="token punctuation">,</span> username<span class="token punctuation">]</span><span class="token punctuation">,</span>
+ <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token function">getGithubUser</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>2.Using the query keys which is more helpful and resilient:</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token keyword control-flow">await</span> <span class="token keyword">function</span> <span class="token function">getGithubUser</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> queryKey <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>user<span class="token punctuation">,</span> username<span class="token punctuation">]</span> <span class="token operator">=</span> queryKey<span class="token punctuation">;</span>
+
+  <span class="token keyword control-flow">return</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://api.github.com/users/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>username<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token method function property-access">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> res<span class="token punctuation">.</span><span class="token method function property-access">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function"><span class="token maybe-class-name">User</span></span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> username <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> userQuery <span class="token operator">=</span> <span class="token function">useQuery</span><span class="token punctuation">(</span>
+    <span class="token punctuation">[</span><span class="token string">"user"</span><span class="token punctuation">,</span> username<span class="token punctuation">]</span><span class="token punctuation">,</span>
+    getGithubUser<span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>userQuery<span class="token punctuation">.</span><span class="token property-access">isLoading</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword control-flow">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">Getting user...</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>p</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>userQuery<span class="token punctuation">.</span><span class="token property-access">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">Error getting user: </span><span class="token punctuation">{</span>userQuery<span class="token punctuation">.</span><span class="token property-access">error</span><span class="token punctuation">.</span><span class="token property-access">message</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>p</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword control-flow">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>p</span><span class="token punctuation">></span></span><span class="token punctuation">{</span>userQuery<span class="token punctuation">.</span><span class="token property-access">data</span><span class="token punctuation">.</span><span class="token property-access">name</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>p</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Or even a more complex scenario like:</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token keyword">function</span> <span class="token function">getIssues</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> queryKey <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>issues<span class="token punctuation">,</span> owner<span class="token punctuation">,</span> repo<span class="token punctuation">,</span> filters<span class="token punctuation">]</span> <span class="token operator">=</span> queryKey<span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> filterQuery <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URLSearchParams</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>filters<span class="token punctuation">.</span><span class="token property-access">assignee</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    filterQuery<span class="token punctuation">.</span><span class="token method function property-access">append</span><span class="token punctuation">(</span><span class="token string">"assignee"</span><span class="token punctuation">,</span> filters<span class="token punctuation">.</span><span class="token property-access">assignee</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>  
+
+  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>filters<span class="token punctuation">.</span><span class="token property-access">labels</span> <span class="token operator">&#x26;&#x26;</span> filters<span class="token punctuation">.</span><span class="token property-access">labels</span><span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    filterQuery<span class="token punctuation">.</span><span class="token method function property-access">append</span><span class="token punctuation">(</span><span class="token string">"labels"</span><span class="token punctuation">,</span> filters<span class="token punctuation">.</span><span class="token property-access">labels</span><span class="token punctuation">.</span><span class="token method function property-access">join</span><span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>  
+
+  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>filters<span class="token punctuation">.</span><span class="token property-access">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    filterQuery<span class="token punctuation">.</span><span class="token method function property-access">append</span><span class="token punctuation">(</span><span class="token string">"state"</span><span class="token punctuation">,</span> filters<span class="token punctuation">.</span><span class="token property-access">state</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>  
+
+  <span class="token keyword">const</span> filterQueryString <span class="token operator">=</span> filterQuery<span class="token punctuation">.</span><span class="token method function property-access">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword control-flow">return</span> <span class="token function">fetch</span><span class="token punctuation">(</span>
+    <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://api.github.com/repos/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>owner<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>repo<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/issues</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>
+      filterQueryString <span class="token operator">?</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">?</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>filterQueryString<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span> <span class="token operator">:</span> <span class="token string">""</span>
+    <span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> res<span class="token punctuation">.</span><span class="token method function property-access">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">Issues</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> owner<span class="token punctuation">,</span> repo <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>issueState<span class="token punctuation">,</span> setIssueState<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"open"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>assignee<span class="token punctuation">,</span> setAssignee<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>labels<span class="token punctuation">,</span> setLabels<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> issuesQuery <span class="token operator">=</span> <span class="token function">useQuery</span><span class="token punctuation">(</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">"issues"</span><span class="token punctuation">,</span>
+      owner<span class="token punctuation">,</span>
+      repo<span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> 
+        <span class="token literal-property property">state</span><span class="token operator">:</span> issueState<span class="token punctuation">,</span> 
+        assignee<span class="token punctuation">,</span> 
+        <span class="token literal-property property">labels</span><span class="token operator">:</span> labels <span class="token operator">||</span> <span class="token keyword nil">undefined</span> 
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    getIssues<span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token spread operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre>

@@ -1,0 +1,21 @@
+<h1 id="mock">Mock<a aria-hidden="true" class="anchor-heading icon-link" href="#mock"></a></h1>
+<p>Imagine the following function:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">fetchData</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">id</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> results <span class="token operator">=</span> <span class="token keyword control-flow">await</span> axios<span class="token punctuation">.</span><span class="token method function property-access">get</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://jsonplaceholder.typicode.com/todos/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    <span class="token spread operator">...</span> <span class="token comment">// validation and other processes</span>
+    <span class="token keyword control-flow">return</span> results<span class="token punctuation">.</span><span class="token property-access">data</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Let's assume the function consists of a lot of validation and other process. In this case, we're banking on the fact that the API call will get resolved successfuly. The API call can fail due to various reasons, e.g. server failure etc.</p>
+<p>However, even if the API call fails, we need to test if our function is correctly written.</p>
+<p>So here, instead of making an actual API call, we will mock the API call and stub a function (or mock) that will always be successful and return us a data object. In this case, we can test our function implementation regardless of the API call.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/4lz8g2g6opi2fe0vh2abo3c">Mock Function</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Personal-Knowledge-Vault/notes/3m33su0agj9nqvkvlixifit">Mock</a></li>
+</ul>

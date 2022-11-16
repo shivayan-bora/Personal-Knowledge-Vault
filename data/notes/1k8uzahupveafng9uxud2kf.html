@@ -1,0 +1,21 @@
+<h1 id="usestate">useState<a aria-hidden="true" class="anchor-heading icon-link" href="#usestate"></a></h1>
+<p>This is how we use the <code>useState</code> hook:</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> <span class="token punctuation">[</span>state<span class="token punctuation">,</span> setState<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span>initialState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>This returns a stateful value and a function to update it.</p>
+<p>During the initial render, the returned state is the same as the value passed as the first argument i.e. <code>initialState</code>.</p>
+<p>The <code>setState</code> function is used to update the state. It accepts a new state value and enqueues a re-render of the component.</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token function">setState</span><span class="token punctuation">(</span>newState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>During subsequent re-renders, the first value returned by useState will always be the most recent state after applying updates.</p>
+<p><strong>Note</strong>: React guarantees that <code>setState</code> function identity is stable and won’t change on re-renders. This is why it’s safe to omit from the <code>useEffect</code> or <code>useCallback</code> dependency list.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/lneeutybpcnj8rcws9xzqx5">TS</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Personal-Knowledge-Vault/notes/g6uzka8l1u1ifsddevfrmj9">Forms</a></li>
+</ul>

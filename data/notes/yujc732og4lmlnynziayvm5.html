@@ -1,0 +1,21 @@
+<h1 id="compiling-jsx">Compiling JSX<a aria-hidden="true" class="anchor-heading icon-link" href="#compiling-jsx"></a></h1>
+<p>To make sure our browsers understand the JSX syntax, we need to use a tool like <a href="/Personal-Knowledge-Vault/notes/0w7fldgq414gxnl05fmpapo">Babel</a> to transpile our code into regular JavaScript that the browser can understand. In most modern React applications, you can add Babel as an <a href="/Personal-Knowledge-Vault/notes/ssjc90e0xqnna6kdnzcj18j">npm</a> dependency to transpile your entire project.</p>
+<p>The Babel transpiler will comvert the above JSX syntax into <code>React.createElement</code> functions as shown below:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+        <span class="token keyword">const</span> rootElement <span class="token operator">=</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> element <span class="token operator">=</span> <span class="token maybe-class-name">React</span><span class="token punctuation">.</span><span class="token method function property-access">createElement</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">className</span><span class="token operator">:</span> <span class="token string">'container'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">children</span><span class="token operator">:</span> <span class="token string">'Hello World'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token maybe-class-name">ReactDOM</span><span class="token punctuation">.</span><span class="token method function property-access">render</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> rootElement<span class="token punctuation">)</span> 
+        <span class="token comment">// As per React 18, this is not the way to attach the app to the root element</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>body</span><span class="token punctuation">></span></span>
+</code></pre>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Personal-Knowledge-Vault/notes/jiiyjbgd40wa0v2pv0ehg3e">createElement</a></li>
+</ul>

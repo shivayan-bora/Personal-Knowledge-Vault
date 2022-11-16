@@ -1,0 +1,42 @@
+<h1 id="prop-drilling">Prop Drilling<a aria-hidden="true" class="anchor-heading icon-link" href="#prop-drilling"></a></h1>
+<p>In this case, if we have multiple components in the same hierarchy, we can lift the state up to a common parent and drill it down to it's child components. This is called <code>prop-drilling</code>:</p>
+<pre class="language-jsx"><code class="language-jsx"> <span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">Home</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>country<span class="token punctuation">,</span> setCountry<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">'CA'</span><span class="token punctuation">)</span>
+  <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span><span class="token class-name">CountryDetails</span></span> <span class="token attr-name">country</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>country<span class="token punctuation">}</span></span><span class="token punctuation">/></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span><span class="token class-name">CountryPicker</span></span> <span class="token attr-name">country</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>country<span class="token punctuation">}</span></span> <span class="token attr-name">setCountry</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>setCountry<span class="token punctuation">}</span></span><span class="token punctuation">/></span></span><span class="token plain-text">
+   </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span>
+ <span class="token punctuation">}</span>
+
+ <span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">CountryPicker</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>country<span class="token punctuation">,</span> setCountry<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  
+
+  <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>select</span> <span class="token attr-name">value</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>country<span class="token punctuation">}</span></span> <span class="token attr-name">onChange</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span> 
+    <span class="token function">setCountry</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span><span class="token property-access">target</span><span class="token punctuation">.</span><span class="token property-access">value</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+   <span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>CA<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token plain-text">Canada</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>option</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>US<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token plain-text">United States of America</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>option</span><span class="token punctuation">></span></span><span class="token plain-text">
+   </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>select</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span>
+ <span class="token punctuation">}</span>
+
+ <span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">CountryDetails</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>country<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword control-flow">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>h1</span><span class="token punctuation">></span></span><span class="token punctuation">{</span>country<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>h1</span><span class="token punctuation">></span></span>
+ <span class="token punctuation">}</span>
+</code></pre>
+<p>However, if we have child components that's using the same piece of state that don't belong to the same hierarchy, we can lift the state upto the topmost common parent, however, it will have two problems:</p>
+<ol>
+<li>When we drill the <code>prop</code> down to the children, any component that doesn't need the data will have access to the state.</li>
+<li>When the state changes in any one of the parent, it will re-render the entire chain of components which might result in a performance hit.</li>
+<li>It becomes unscalable and unmanageable once the complexity of the application increases.</li>
+</ol>
+<p>To manage this, we use either <a href="/Personal-Knowledge-Vault/notes/3k3jut4tw2brwahs3j28qqz">Composition</a> or <a href="/Personal-Knowledge-Vault/notes/qp0uwf7dogj9emc6zjq0mh5">Global State</a></p>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Personal-Knowledge-Vault/notes/xoci9y3gsv4k4z7hjvss9r7">Unidirectional Data Flow</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/r8ngopnb8lhaywyiylmo4ni">Local State</a></li>
+</ul>

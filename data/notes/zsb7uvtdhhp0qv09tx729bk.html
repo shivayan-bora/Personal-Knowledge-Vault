@@ -1,0 +1,31 @@
+<h1 id="components">Components<a aria-hidden="true" class="anchor-heading icon-link" href="#components"></a></h1>
+<p>In React we create components. Components are basically functions that returns something that's rendereable e.g. more React elements, strings, <code>null</code>, numbers etc. They're self-contained pieces of UI that only re-render when their props change.</p>
+<p>We can think of the components or in general UI as a function of the state and props.</p>
+<p>You can use <code>div</code>, <code>span</code> etc. HTML tags to create components or create a custom component that contains a bunch of other React elements composed together to form a single component that can be reused anywhere.</p>
+<p>All custom React components must start with an uppercase letter for React to be able to recognize it as a custom component.</p>
+<pre class="language-jsx"><code class="language-jsx">    <span class="token keyword">const</span> <span class="token function-variable function"><span class="token maybe-class-name">Message</span></span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>children<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword control-flow">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>message<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span>children<span class="token punctuation">}</span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">const</span> element <span class="token operator">=</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span><span class="token class-name">Message</span></span><span class="token punctuation">></span></span><span class="token plain-text">Hello World</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span><span class="token class-name">Message</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span><span class="token class-name">Message</span></span><span class="token punctuation">></span></span><span class="token plain-text">Goodbye World</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span><span class="token class-name">Message</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span>
+
+    <span class="token maybe-class-name">ReactDOM</span><span class="token punctuation">.</span><span class="token method function property-access">createRoot</span><span class="token punctuation">(</span><span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">render</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span>
+</code></pre>
+<p>When creating components, we need to make sure a component returns only one element. We might have multiple components nested inside that element but effectively a component can only return one and only one element.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/4h57qzdo5dd9itcgyf4uhf6">Default Props</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/qmvybeiw6kaunb6ftpcqek2">PropTypes</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/dh2xq6p4hkqp78lsgjy063g">React Fragments</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/6v026gbdppe969wfl6sdung">Spreading Props</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/ibiacb6dvi6aql7khvq4gf7">TS</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/kgvoi7zoh21gls2gnjmj7my">Types</a></li>
+</ol>

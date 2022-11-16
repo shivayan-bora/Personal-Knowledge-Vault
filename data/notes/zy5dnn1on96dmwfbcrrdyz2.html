@@ -1,0 +1,48 @@
+<h1 id="setup-and-teardown">Setup and Teardown<a aria-hidden="true" class="anchor-heading icon-link" href="#setup-and-teardown"></a></h1>
+<p>Similar to <a href="/Personal-Knowledge-Vault/notes/smhiz8dmmsukpv64i8g08ok">Setup and Teardown</a>.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function"><span class="token maybe-class-name">MockFollowersList</span></span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&#x3C;</span><span class="token maybe-class-name">BrowserRouter</span><span class="token operator">></span>
+            <span class="token operator">&#x3C;</span><span class="token maybe-class-name">FollowersList</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token operator">&#x3C;</span><span class="token operator">/</span><span class="token maybe-class-name">BrowserRouter</span><span class="token operator">></span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'FollowersList'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+    <span class="token comment">// Used for initializations</span>
+    <span class="token function">beforeEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Running Before Each Test'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">beforeAll</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Running Once Before All Tests'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// Used for cleanups</span>
+    <span class="token function">afterEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Running After Each Test'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">afterAll</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Running Once After All Tests'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should render the followers list card'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&#x3C;</span><span class="token maybe-class-name">MockFollowersList</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> followerDivElement <span class="token operator">=</span> <span class="token keyword control-flow">await</span> screen<span class="token punctuation">.</span><span class="token method function property-access">findByTestId</span><span class="token punctuation">(</span><span class="token string">'follower-item-0'</span><span class="token punctuation">)</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>followerDivElement<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toBeInTheDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should render the followers list card 2'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&#x3C;</span><span class="token maybe-class-name">MockFollowersList</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> followerDivElement <span class="token operator">=</span> <span class="token keyword control-flow">await</span> screen<span class="token punctuation">.</span><span class="token method function property-access">findByTestId</span><span class="token punctuation">(</span><span class="token string">'follower-item-0'</span><span class="token punctuation">)</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>followerDivElement<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toBeInTheDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should render the followers list card 3'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&#x3C;</span><span class="token maybe-class-name">MockFollowersList</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> followerDivElement <span class="token operator">=</span> <span class="token keyword control-flow">await</span> screen<span class="token punctuation">.</span><span class="token method function property-access">findByTestId</span><span class="token punctuation">(</span><span class="token string">'follower-item-0'</span><span class="token punctuation">)</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>followerDivElement<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">toBeInTheDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>

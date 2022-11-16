@@ -1,0 +1,18 @@
+<h1 id="beans">Beans<a aria-hidden="true" class="anchor-heading icon-link" href="#beans"></a></h1>
+<p>The instances that Spring manages are called beans. e.g.</p>
+<pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComplexBusinessService</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token class-name">SortAlgorithm</span> sortAlgorithm<span class="token punctuation">;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+
+<span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BubbleSortAlgorithm</span> <span class="token keyword">implements</span> <span class="token class-name">SortAlgorithm</span> <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+</code></pre>
+<p><code>ComplexBusinessService</code> and <code>BubbleSortAlgorithm</code> are two beans.</p>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Personal-Knowledge-Vault/notes/4wfnblb1ri965eyfpzijr8a">Components</a></li>
+</ul>

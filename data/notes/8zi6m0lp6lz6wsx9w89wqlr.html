@@ -1,0 +1,42 @@
+<h1 id="dependency-injection">Dependency Injection<a aria-hidden="true" class="anchor-heading icon-link" href="#dependency-injection"></a></h1>
+<p>Let's consider a simple example:</p>
+<pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComplexBusinessService</span> <span class="token punctuation">{</span>
+    <span class="token class-name">SortAlgorithm</span> sortAlgorithm<span class="token punctuation">;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BubbleSortAlgorithm</span> <span class="token keyword">implements</span> <span class="token class-name">SortAlgorithm</span> <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+</code></pre>
+<p>Here we have a <code>ComplexBusinessService</code> class which needs another class <code>SortingAlgorithm</code> to perform some sort of sorting which aids in the business logic. We can say, the <code>ComplexBusinessService</code> is dependent on <code>SortingAlgorithm</code>.</p>
+<p>Likewise, in a bigger web application, we have thousands of classes and each class needs some other class to perform it's function, i.e. those classes need other classes as a dependency. So, in a typical application, you will have a lot of classes with a lot of dependency.</p>
+<p>Before Spring came into picture, this is how we used to manage dependencies:</p>
+<pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComplexBusinessService</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Creates a new instance of a BubbleSortAlgorithm class</span>
+    <span class="token class-name">SortAlgorithm</span> sortAlgorithm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BubbleSortAlgorithm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BubbleSortAlgorithm</span> <span class="token keyword">implements</span> <span class="token class-name">SortAlgorithm</span> <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+
+</code></pre>
+<p><code>ComplexBusinessService</code> directly instantiates an object of <code>BubbleSortAlgorithm</code> class. If we would need our service to use a quick sort algorithm, we need to modify the code. This is called tight coupling i.e., <code>ComplexBusinessService</code> is tightly couple with <code>BubbleSortAlgorithm</code>, which is not considered a good practice.</p>
+<p>To fix this, we would need to do the following:</p>
+<pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComplexBusinessService</span> <span class="token punctuation">{</span>
+    <span class="token class-name">SortAlgorithm</span> sortAlgorithm<span class="token punctuation">;</span> <span class="token comment">// = new BubbleSortAlgorithm();</span>
+    <span class="token comment">// Creates a constructor to accept a SortAlgorithm type object and instantiate our sorting algorithm</span>
+    <span class="token keyword">public</span> <span class="token class-name">ComplexBusinessService</span><span class="token punctuation">(</span><span class="token class-name">SortAlgorithm</span> sortAlgorithm<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sortAlgorithm <span class="token operator">=</span> sortAlgorithm<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Now whoever is using the <code>ComplexBusinessService</code>, can pass the type of<code>SortAlgorithm</code> to the constructor of <code>ComplexBusinessService</code>.</p>
+<pre class="language-java"><code class="language-java"><span class="token class-name">SortAlgorithm</span> sortAlgorithm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BubbleSortAlgorithm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">ComplexBusinessService</span> businessService <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ComplexBusinessService</span><span class="token punctuation">(</span>sortAlgorithm<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>All the code is doing is creating object and populating the dependencies. This is Dependency Injection.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/6qdkcp9ubtot0rjtmqax9rb">How</a></li>
+</ol>

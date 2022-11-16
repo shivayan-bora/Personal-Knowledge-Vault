@@ -1,0 +1,28 @@
+<h1 id="inversion-of-control">Inversion of Control<a aria-hidden="true" class="anchor-heading icon-link" href="#inversion-of-control"></a></h1>
+<p>Consider this example.</p>
+<pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComplexBusinessService</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Creates a new instance of a BubbleSortAlgorithm class</span>
+    <span class="token class-name">SortAlgorithm</span> sortAlgorithm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BubbleSortAlgorithm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BubbleSortAlgorithm</span> <span class="token keyword">implements</span> <span class="token class-name">SortAlgorithm</span> <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+</code></pre>
+<p>Here the Class which needs the dependency is creating the instance of the dependency.</p>
+<p>However in the below example, Spring is the one that's creating the instance of the dependency:</p>
+<pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComplexBusinessService</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token class-name">SortAlgorithm</span> sortAlgorithm<span class="token punctuation">;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+
+<span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BubbleSortAlgorithm</span> <span class="token keyword">implements</span> <span class="token class-name">SortAlgorithm</span> <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+</code></pre>
+<p>Spring takes the control from the class that needs the dependency to create an instance of the dependency. This is called Inversion of Control.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/z4uzqpn3waj7vxkxwv3pohu">IOC Container</a></li>
+</ol>

@@ -1,0 +1,15 @@
+<h1 id="spring">Spring<a aria-hidden="true" class="anchor-heading icon-link" href="#spring"></a></h1>
+<p>A typical application structure looks like this:</p>
+<p><img src="/Personal-Knowledge-Vault/assets/images/2022-07-30-17-35-27.png" alt="Layers of Application"></p>
+<p><strong>Web Layer</strong>: Takes care of the UI or the <a href="/Personal-Knowledge-Vault/notes/zzhwm4exmhvlbn0qg3lx2c6">Front-end</a>. If the UI needs some data to show to the user, it calls the Business layer.</p>
+<p><strong>Business Layer</strong>: Place where your business logic lies. If business layer needs some data, it calls some class which is present inside the Data Layer.</p>
+<p><strong>Data Layer</strong>: Talks with the external interfaces as well as the Database.</p>
+<p>So, Web Layer --> Dependent on --> Business Layer --> Dependent on --> Data Layer</p>
+<p>Spring framework instantiates objects and populates the dependencies. It's us developers who are responsible for telling the framework on what are the objects it needs to manage and what are it's dependencies.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/cy68yithupqf94eqfn14s4q">Annotations</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/y0mrghcen00zzcf1nl1o803">Application Properties</a></li>
+<li><a href="/Personal-Knowledge-Vault/notes/5rbl09d8ofjk3ji4w81uy4p">Concepts</a></li>
+</ol>

@@ -1,0 +1,51 @@
+<h1 id="difference-between-types-and-interfaces">Difference between Types and Interfaces<a aria-hidden="true" class="anchor-heading icon-link" href="#difference-between-types-and-interfaces"></a></h1>
+<p>The basic difference lies between how the extend each other:</p>
+<ul>
+<li>Two types:</li>
+</ul>
+<pre class="language-js"><code class="language-js">type <span class="token constant">X</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">a</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+    <span class="token literal-property property">b</span><span class="token operator">:</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+type <span class="token constant">Y</span> <span class="token operator">=</span> <span class="token constant">X</span> <span class="token operator">&#x26;</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">c</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+    <span class="token literal-property property">d</span><span class="token operator">:</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>Two interfaces:</li>
+</ul>
+<pre class="language-js"><code class="language-js"><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">Guy</span> <span class="token keyword">extends</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">occupation</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>One interface and one type:</li>
+</ul>
+<pre class="language-js"><code class="language-js"><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+type <span class="token constant">X</span> <span class="token operator">=</span> <span class="token maybe-class-name">Person</span> <span class="token operator">&#x26;</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">a</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+    <span class="token literal-property property">b</span><span class="token operator">:</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>or</p>
+<pre class="language-js"><code class="language-js">type <span class="token constant">X</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">a</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+    <span class="token literal-property property">b</span><span class="token operator">:</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token keyword">extends</span> <span class="token class-name">X</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>

@@ -1,0 +1,21 @@
+<h1 id="default-props">Default Props<a aria-hidden="true" class="anchor-heading icon-link" href="#default-props"></a></h1>
+<p>You can also define default values for your <code>props</code> by assigning to the special <code>defaultProps</code> property:</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token comment">// Specifies the default values for props:</span>
+<span class="token maybe-class-name">Greeting</span><span class="token punctuation">.</span><span class="token property-access">defaultProps</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Stranger'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>If you are using a Babel transform like <code>plugin-proposal-class-properties</code> (previously <code>plugin-transform-class-properties</code>), you can also declare defaultProps as static property within a React component class. This syntax has not yet been finalized though and will require a compilation step to work within a browser.</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token keyword">class</span> <span class="token class-name">Greeting</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> defaultProps <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'stranger'</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">Hello, </span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">props</span><span class="token punctuation">.</span><span class="token property-access">name</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The <code>defaultProps</code> will be used to ensure that <code>this.props.name</code> will have a value if it was not specified by the parent component. The <a href="/Personal-Knowledge-Vault/notes/qmvybeiw6kaunb6ftpcqek2">PropTypes</a> typechecking happens after <code>defaultProps</code> are resolved, so typechecking will also apply to the <code>defaultProps</code>.</p>

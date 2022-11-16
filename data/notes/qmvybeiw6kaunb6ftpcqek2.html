@@ -1,0 +1,31 @@
+<h1 id="proptypes">PropTypes<a aria-hidden="true" class="anchor-heading icon-link" href="#proptypes"></a></h1>
+<p><code>PropTypes</code> are used to run validation on the <code>prop</code> being received by a component. It is used to validate the data type as well as if a particular <code>prop</code> is mandatory.</p>
+<p>However, <code>PropTypes</code> add some runtime overhead resulting in suboptimal performance and hence, they don't run in a production environment.</p>
+<p>These days however, people also prefer using <a href="/Personal-Knowledge-Vault/notes/sdp499ds7w20unr7ygdwloz">TypeScript</a> for <code>prop</code> validation instead of <code>PropTypes</code>.</p>
+<p>Adding <code>PropTypes</code> to functional components:</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">PropTypes</span></span> <span class="token keyword module">from</span> <span class="token string">'prop-types'</span>
+
+<span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">HelloWorldComponent</span></span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> name <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword control-flow">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">Hello, </span><span class="token punctuation">{</span>name<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token maybe-class-name">HelloWorldComponent</span><span class="token punctuation">.</span><span class="token property-access">propTypes</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token maybe-class-name">PropTypes</span><span class="token punctuation">.</span><span class="token property-access">string</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token maybe-class-name">HelloWorldComponent</span>
+</code></pre>
+<p><strong>References:</strong>
+<a href="https://reactjs.org/docs/typechecking-with-proptypes.html">TypeChecking with PropTypes</a></p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/Personal-Knowledge-Vault/notes/anvogtpsax0d5xrvennzd66">TS</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Personal-Knowledge-Vault/notes/4h57qzdo5dd9itcgyf4uhf6">Default Props</a></li>
+</ul>
